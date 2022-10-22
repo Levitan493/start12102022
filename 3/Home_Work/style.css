@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAC960;
+}
+header{
+    background-color: white;
+    padding: 10px 0;
+}
+.wrapper{
+    width: 940px;
+    margin: 0 auto;
+}
+.logo,
+.links{
+    width: 400px;
+    display: inline-block;;
+}
+.links{
+    text-align: right;
+    background-color: rgb(27, 204, 145);
+}
+.logo{
+    background-color: chartreuse;
+}
+a{
+    text-decoration: none;
+}
+
+.text1{
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 54px;
+    color: #8A6D2F;
+    text-align: center;
+    padding: 102px 380px 211px 381px
+}
+.email{
+    width: 400px auto;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    color: #999999;
+}
+input.submit{
+    line-height: 34px;
+}
+input type="button"{
+    background: #A8863D;
+
+    
+}
+
+
