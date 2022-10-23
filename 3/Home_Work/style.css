@@ -3,14 +3,15 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #FAC960;
 }
 header{
-    background-color: white;
+    /* background-color: white; */
     padding: 10px 0;
+    width: auto;
+    height: 78px;
 }
 .wrapper{
-    width: 940px;
+    width: 830px;
     margin: 0 auto;
 }
 .logo,
@@ -20,37 +21,84 @@ header{
 }
 .links{
     text-align: right;
-    background-color: rgb(27, 204, 145);
+    /* background-color: rgb(27, 204, 145); */
 }
-.logo{
+/* .logo{
     background-color: chartreuse;
-}
+} */
 a{
     text-decoration: none;
 }
-
-.text1{
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 54px;
-    color: #8A6D2F;
+.section-1, .section-2, .section-3, .section-4, footer{
     text-align: center;
-    padding: 102px 380px 211px 381px
 }
-.email{
-    width: 400px auto;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 34px;
-    color: #999999;
+.section-1{
+padding: 102px;
 }
-input.submit{
-    line-height: 34px;
+h1{
+font-weight: 400;
+font-size: 44px;
+line-height: 54px;
+color: #8A6D2F;
 }
-input type="button"{
-    background: #A8863D;
-
-    
+.no-more{
+font-weight: 400;
+font-size: 43px;
+line-height: 54px;
+color: #8A6D2F;
 }
-
-
+.submit{
+border-radius: 0px 2px 2px 0px;
+background-color: #A8863D;
+}
+.section-2, footer{
+    background-color: #F2F2F2;
+}
+.sec-2-text1{
+font-weight: 400;
+font-size: 37px;
+line-height: 36px;
+color: rgba(0, 0, 0, 0.56);
+}
+.sec-2-text2{
+font-weight: 400;
+font-size: 23px;
+line-height: 30px;
+color: rgba(0, 0, 0, 0.4);
+}
+.infinity{
+/* width: 186.59px;
+height: 96px; */
+}
+.sec-3-tx1{
+font-weight: 400;
+font-size: 37px;
+line-height: 36px;
+color: rgba(0, 0, 0, 0.56);
+}
+.sec-3-tx2{
+font-weight: 400;
+font-size: 23px;
+line-height: 30px;
+color: rgba(0, 0, 0, 0.4);
+}
+.section-4, .section-1, .space2{
+    background-color: #FAC960;
+}
+.sec-4-tx1{
+font-weight: 400;
+font-size: 37px;
+line-height: 36px; 
+color: #8A6D2F;
+}
+.sec-4-tx2{
+font-weight: 400;
+font-size: 22px;
+line-height: 30px;
+color: rgba(0, 0, 0, 0.4);
+;
+}
+.bt-f{
+    width: 61px;
+    height: 22px;
+}
