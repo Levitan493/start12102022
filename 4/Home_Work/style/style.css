@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #E5E5E5;
+}
+.Diia, .Square, .circle{
+    position: absolute;
+}
+.Main{
+    position: relative;
+}
+.diia-img, .square-img, .circle-img{
+    width: 250px;
+    height: 250px;
+}
+.Diia{
+    top: 100px;
+    left: 100px;
+}
+.Square{
+    right: 956px;
+    top: 298px;
+    z-index: 3;
+}
+.circle{
+    top: 505px;
+    right: 744px;
+}
