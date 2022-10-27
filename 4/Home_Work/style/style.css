@@ -4,26 +4,76 @@
 body{
     background-color: #E5E5E5;
 }
-.Diia, .Square, .circle{
-    position: absolute;
+.wrapper{
+    width: 1500px;
+    margin: 100px auto;
 }
-.Main{
-    position: relative;
-}
-.diia-img, .square-img, .circle-img{
-    width: 250px;
-    height: 250px;
+.Diia, .Square, .Circle, .Circle>img{
+    height: 512px;
+    width: 512px;
 }
 .Diia{
-    top: 100px;
-    left: 100px;
+    background-color: black;
+    position: relative;
+}
+.diia_title{
+    padding: 129px 101px 32px 101px;
+}
+.Flag-diia{
+padding: 29px 216px 109px 216px;
 }
 .Square{
-    right: 956px;
-    top: 298px;
-    z-index: 3;
+    position: absolute;
+    left: 441px;
+    top: 526px;
+    
 }
-.circle{
-    top: 505px;
-    right: 744px;
+
+.Sq_blue{
+    background-color: #2137FC;
+    height: 256px;
 }
+.Sq_yellow{
+    background-color: #FFCE22;
+    height: 256px;
+    position: relative;
+}
+.waves{
+    position: absolute;
+    z-index: 1;
+    bottom: 135px;
+    left: 53px;
+}
+/* .Circle{
+    background-color: #FFCE22;
+}
+.circle-yellow{
+    position: relative;
+}
+.circle-blue{
+    position: absolute;
+    left: 34px;
+    top: 546px;
+}
+.waves-circle{
+    position: absolute;
+    left: 78px;
+    top: 758px;
+} */
+.Circle img{
+
+}
+.Circle{
+    position: absolute;
+    left: 423px;
+    top: 417px;
+    z-index: -1;
+    /* border-top: 2px solid #2137FC; */
+}
+.Border-C{
+    position: relative;
+    top: -516px;
+    border-top: 3px solid #2137FC;
+    border-bottom: 3px solid #2137FC;
+}
+
