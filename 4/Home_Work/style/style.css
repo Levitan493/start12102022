@@ -61,20 +61,21 @@ padding: 29px 216px 109px 216px;
     top: 758px;
 } */
 .Circle img{
+    width: 512px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    border-bottom: 3px solid #2137FC;
 
 }
 .Circle{
+    background-color: white;
     position: absolute;
     left: 423px;
     top: 417px;
     z-index: -1;
     border-top: 3px solid #2137FC;
-    border-bottom: 3px solid #2137FC;
+    /* border-bottom: 3px solid #2137FC; */
 }
-/* .Border-C{
-    position: relative;
-    top: -516px;
-    border-top: 3px solid #2137FC;
-    border-bottom: 3px solid #2137FC;
-} */
+
 
