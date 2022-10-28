@@ -68,12 +68,13 @@ padding: 29px 216px 109px 216px;
     left: 423px;
     top: 417px;
     z-index: -1;
-    /* border-top: 2px solid #2137FC; */
+    border-top: 3px solid #2137FC;
+    border-bottom: 3px solid #2137FC;
 }
-.Border-C{
+/* .Border-C{
     position: relative;
     top: -516px;
     border-top: 3px solid #2137FC;
     border-bottom: 3px solid #2137FC;
-}
+} */
 
