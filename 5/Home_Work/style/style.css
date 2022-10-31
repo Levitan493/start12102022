@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    margin-bottom: 138px;
+}
+.clearfix{
+    margin-top: 16px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .logo{
+    float: left;
+    font-family: Poppins;
+    font-size: 27px;
+    font-weight: 600;
+    margin-left: 12px;
+    
+  }
+.menu{
+    float: right;
+    margin-right: 160px;
+    margin-top: 36px;
+
+  }
+.links{
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 12px;
+}
+.button_Bue_now{
+    font-size: 21px;
+    font-weight: 500;
+    height: 45px;
+    width: 127px;
+    margin-left: 581px;
+    margin-top: -34px;
+    margin-right: 12px;
+    float: right;
+    background-color: white;
+    color: #2203E4;
+    border-color: #2203E4;
+    border-width: 1px;
+    border: solid;
+}
+.design_button{
+    background-color: white;
+    color: #2203E4;
+    border-color: #2203E4;
+    margin-right: 12px;
+    /* padding: 16px 10px; */
+    font-weight: 500;
+    size: 21px;
+    display: block;
+}
+.Phone_title{
+font-family: Poppins;
+font-size: 47px;
+font-weight: 700;
+margin-right: 96px;
+}
+.text_button_Phone{
+    float: left;
+    margin: 147px 0 0 216px
+}
+.iphone{
+    float: right;
+    margin-right: 
+}
+

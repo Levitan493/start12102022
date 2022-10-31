@@ -26,9 +26,7 @@ padding: 29px 216px 109px 216px;
     position: absolute;
     left: 441px;
     top: 526px;
-    
 }
-
 .Sq_blue{
     background-color: #2137FC;
     height: 256px;
@@ -44,38 +42,23 @@ padding: 29px 216px 109px 216px;
     bottom: 135px;
     left: 53px;
 }
-/* .Circle{
-    background-color: #FFCE22;
-}
-.circle-yellow{
-    position: relative;
-}
-.circle-blue{
-    position: absolute;
-    left: 34px;
-    top: 546px;
-}
-.waves-circle{
-    position: absolute;
-    left: 78px;
-    top: 758px;
-} */
-.Circle img{
-    width: 512px;
-    margin: 0 auto;
-    display: block;
-    position: absolute;
-    border-bottom: 3px solid #2137FC;
-
-}
 .Circle{
     background-color: white;
+    background-color: #E5E5E5;
     position: absolute;
     left: 423px;
     top: 417px;
     z-index: -1;
-    border-top: 3px solid #2137FC;
-    /* border-bottom: 3px solid #2137FC; */
+    border-bottom: #2137FC 3px solid;
+
+}
+.Circle_img{
+    width: 513px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    border-top: #2137FC solid 2px;
+    border-bottom: 3px #2137FC;
 }
 
 
