@@ -44,21 +44,29 @@ padding: 29px 216px 109px 216px;
 }
 .Circle{
     background-color: white;
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
     position: absolute;
     left: 423px;
     top: 417px;
     z-index: -1;
     border-bottom: #2137FC 3px solid;
-
+    border-top: #2137FC solid 3px;
 }
+/* .circle-blue{
+    position: absolute;
+    top 0
+}
+.yellow{
+    background-color: #FFCE22;
+} */
+
 .Circle_img{
     width: 513px;
     margin: 0 auto;
-    display: block;
-    position: absolute;
-    border-top: #2137FC solid 2px;
-    border-bottom: 3px #2137FC;
+    display: inline-block;
+    /* position: absolute; */
+    border: none;
+    height: 510px;
+    /* border-top: #2137FC solid 2px; */
+    /* border-bottom: 3px #2137FC; */
 }
-
-

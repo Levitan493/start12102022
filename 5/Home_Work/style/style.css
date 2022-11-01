@@ -26,7 +26,7 @@ header{
 .menu{
     float: right;
     margin-right: 160px;
-    margin-top: 36px;
+    margin-top: 10px;
 
   }
 .links{
@@ -34,6 +34,7 @@ header{
     font-size: 21px;
     font-weight: 500;
     padding: 12px;
+    color: black;
 }
 .button_Bue_now{
     font-size: 21px;
@@ -41,8 +42,8 @@ header{
     height: 45px;
     width: 127px;
     margin-left: 581px;
-    margin-top: -34px;
-    margin-right: 12px;
+    margin-top: -49px;;
+    margin-right: -154px;
     float: right;
     background-color: white;
     color: #2203E4;
@@ -72,6 +73,32 @@ margin-right: 96px;
 }
 .iphone{
     float: right;
-    margin-right: 
+    margin-right: 162px;
 }
-
+.Title_autors{
+    text-align: center;
+    font-size: 36px;
+}
+.subtitle_authors{
+    font-size: 16px;
+    text-align: center;
+    color: #575757;
+}
+.face{
+    float: left;
+}
+.author-l{
+    
+}
+.Authors-button{
+    background-color: #0062FF;
+    color: white;
+    Weight 400px
+    Size 16px
+}
+.author-l{
+    float: left: ;
+}
+.author-r{
+    float: right;
+}
