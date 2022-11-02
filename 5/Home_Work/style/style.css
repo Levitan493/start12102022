@@ -6,6 +6,11 @@ body{
 }
 header{
     margin-bottom: 138px;
+     /* position: sticky; */
+     top: 0;
+     background-color: #fff;
+     z-index: 2;
+    
 }
 .clearfix{
     margin-top: 16px;
@@ -36,11 +41,14 @@ header{
     padding: 12px;
     color: black;
 }
+.button_Bue_now:hover{
+    background-color: #b5bfd0;
+}
 .button_Bue_now{
     font-size: 21px;
     font-weight: 500;
-    height: 45px;
-    width: 127px;
+    display: inline-block;
+    padding: 10px 20px;
     margin-left: 581px;
     margin-top: -49px;;
     margin-right: -154px;
@@ -67,9 +75,20 @@ font-size: 47px;
 font-weight: 700;
 margin-right: 96px;
 }
+.Demo-button{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.Demo-button:hover{
+    color: #0062FF;
+}
 .text_button_Phone{
     float: left;
     margin: 147px 0 0 216px
+}
+.Authors-button:hover{
+    background-color: #fff;
+    color: #2203E4;
 }
 .iphone{
     float: right;
@@ -86,6 +105,7 @@ margin-right: 96px;
 }
 .face{
     float: left;
+    margin: 21px 46px 0 131px;
 }
 .author-l{
     
@@ -93,12 +113,151 @@ margin-right: 96px;
 .Authors-button{
     background-color: #0062FF;
     color: white;
-    Weight 400px
+    display: inline-block;
+    padding: 10px 20px;
     Size 16px
 }
 .author-l{
-    float: left: ;
+    float: left;
 }
 .author-r{
     float: right;
+    margin-right: 192px;
+}
+.author-l>h3, .author-r>h3{
+    font-size: 27px;
+    margin-bottom: 0;
+}
+.author-position{
+    font-size: 21px;
+    color: #575757;
+    margin-top: 0;
+}
+.author-sub-pos{
+   font-size: 16px;
+   color: #575757;
+   margin-top: 12px;
+}
+.list{
+   padding-left: 0;
+}
+.author-lincs{
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 14px;
+}
+.p-brown, .p-brown-big{
+    color: #DEA405;
+}
+.p-brown-big{
+    font-size: 21px;
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+.p-brown{
+    font-size: 16px;
+    margin-top: 0;
+}
+.autor-before{
+    position: relative;
+}
+.autor-before::before{
+     content: url(../img/Vector.png);
+     position: absolute;
+     display: block;
+     bottom: 0;
+    right: 208px;
+    top: 16px;
+}
+.for-who{
+    background-color: #0062FF;
+    padding: 71px auto ;
+    margin-bottom: 71px;
+}
+.blue-section-title{
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 25px;
+}
+.sub-title-blue{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.img-blue-section{
+    width: 122px;
+    height: 122px;
+    display: inline-block;
+    border-radius: 24px;
+    position: absolute;
+    right: 490px;
+}
+.float-left{
+    float: left;
+    position: relative;
+    margin: 68px 0 0 260px;
+    
+}
+.float-right{
+    float: right;
+    position: relative;
+    margin: 68px 130px 0 0;
+}
+.big-size-tittle{
+    font-size: 27px;
+    color: #fff;
+}
+.small-size-tittle{
+    font-size: 16px;
+    color: #fff;
+}
+.button-for-who{
+    color: #2203E4;
+    margin: 426px auto 71px;
+    display: inline-block;
+    padding: 10px 20px;
+}
+.demo{
+    padding: 63px auto;
+}
+.demo-text{
+    float: left;
+    width: 756px;
+    padding-left: 205px;
+    padding-top: 40px;
+}
+.img-demo{
+    float: right;
+    width: 756px;
+    padding-right: 192px;
+    padding-top: 28px;
+    display: block;
+    position: relative;
+}
+.img-vector{
+    height: 557px;
+    padding: 44px 202px 131px 59px;
+}
+.main-title, 
+.subtitle-demo,
+.secondary-title,
+.subtitle-demo{
+    text-align: center;
+}
+
+.main-title{
+    font-size: 36px;
+}
+.subtitle-demo{
+    font-size: 16px;
+    color: #575757;
+}
+.secondary-title{
+    font-size: 21px;
+    font-style: normal;
+}
+.Opinions{
+    background-color: #FFBE0B;
 }
