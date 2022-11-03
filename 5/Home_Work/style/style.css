@@ -6,7 +6,7 @@ body{
 }
 header{
     margin-bottom: 138px;
-     /* position: sticky; */
+     position: sticky;
      top: 0;
      background-color: #fff;
      z-index: 2;
@@ -74,19 +74,25 @@ font-weight: 700;
 margin-right: 96px;
 }
 .Demo-button{
-    display: inline-block;
-    padding: 10px 20px;
+    font-size: 16px;
+    padding: 9px 23px;
+    background-color: #fff;
+    border: 1px solid;
 }
-.Demo-button:hover{
-    color: #0062FF;
-}
+
 .text_button_Phone{
     float: left;
     margin: 147px 0 0 216px
 }
+.Demo-button:hover{
+    color: #0062FF;
+    border: 2px solid #2203E4;
+    
+}
 .Authors-button:hover{
     background-color: #fff;
     color: #2203E4;
+    border: 2px solid #2203E4;;
 }
 .iphone{
     float: right;
@@ -109,8 +115,8 @@ margin-right: 96px;
     background-color: #0062FF;
     color: white;
     display: inline-block;
-    padding: 10px 20px;
-    Size 16px
+    padding: 10px 16px;
+    border: none;
 }
 .author-l{
     float: left;
@@ -213,9 +219,10 @@ margin-right: 96px;
     margin: 426px auto 71px;
     display: inline-block;
     padding: 10px 20px;
+    border: 1px solid #2203E4;
 }
-.demo{
-    padding: 63px auto;
+.button-for-who:hover{   
+    font-size: 21px;
 }
 .demo-text{
     float: left;
@@ -230,10 +237,11 @@ margin-right: 96px;
     padding-top: 28px;
     display: block;
     position: relative;
+    bottom: 50px;
 }
 .img-vector{
     height: 557px;
-    padding: 44px 202px 131px 59px;
+    padding: 44px 124px 131px 59px;
 }
 .main-title, 
 .subtitle-demo,
@@ -256,18 +264,132 @@ margin-right: 96px;
 .Opinions{
     background-color: #FFBE0B;
 }
+.title-opinions{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 61px;
+}
+.subtitle-opinions{
+    font-size: 16px;
+    text-align: center;
+}
+.Ceo-name{
+    font-size: 27px;
+    /* position: relative; */
+}
 .position-name{
-    font-size: 21px;
+    font-size: 21px; 
+    /* position: relative;  */
 }
 .position-name::before{
     content: url(../img/Vector\ \(1\).png);
     display: block;
-    background-color: #FFBE0B
+    background-color: #fff;
+    position: absolute; 
+    left: 10px;
 }
 .opinions-white{
     background-color: #fff;
     position: relative;
+    margin: 42px auto 67px;
+    padding: 53px 31px 53px 68px;
+    width: 702px;  
+    border-radius: 12px;
 }
-.Ceo-name{
+h3, h4{
+    margin: 0;
+}
+.Ceo-name::after{
+    content: url(../img/Statrs.png);
+    display: block;
+    position: absolute;
+    right: 288px;
+    top: 61px;
+}
+.opinions-white::before{
+    content: url(../img/Frame_befor.png);
+    display: block;
+    position: absolute;
+    left: -408px;
+    top: -17px;
+}
+.opinions-white::after{
+    content: url(../img/Frame_after.png);
+    display: block;
+    position: absolute;
+    right: -398px;
+    top: -17px;
+}
+.footer_text{
+    margin: 89px auto 74px;
+}
+.footer_title{
+    font-size: 36px;
+    text-align: center;
+}
+.forter_subtitle{
+    font-size: 16px;
+    text-align: center;
+    padding: 23px auto;
+}
+.shop{
+    padding: 77px 305px 93px 620px;
+    position: relative;
+    
+}
+.shop::before{
+    content: url(../img/iPhone\ 14.png);
+    display: block;
+    position: absolute;
+    left: 291px;
+    top: 8px;
+}
+.product_title{
+    font-size: 36px;
+    color: #2203E4;
+    
+}
+.product_subtitle{
+    font-size: 16px;
+    color: #575757;
+}
+.shop_button{
+    background-color: #0062FF;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+}
+.reviws{
+    padding-bottom: 23px;
+}
+.email_discount{
+    background-color: rgba(58, 134, 255, 0.2);
+    color: #2203E4;
+    padding: 25px 282px 25px 24px;
+    display: block;
+    border: none;
+    border-radius: 12px;
+    margin: 35px auto 6px;
+    font-size: 16px;
+}
+.email_discount::placeholder{
+    color: #2203E4;
+    font-size: 16px;
+    /* text-align: center; */ 
+}
+.discount_button{
+    background-color: #0062FF;
+    color: #fff;
+    padding: 10px 160px 10px 160px;
+    border: none;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+}
+.about_discount{
     font-size: 27px;
+    text-align: center;
+    margin-bottom: 104px;
 }
+
