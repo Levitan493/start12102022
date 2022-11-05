@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+.wraper{
+    background-image: url(../img/background.png);
+    background-size: cover;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    display: flex;
+    padding: 58px 82px ;
+    margin-bottom: 138px;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 50%;
+    padding-top: 17px;   
+}
+.h3_logo{
+    font-size: 24px;
+    color: white;
+}
+.hd_searh{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.header_menu{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.hd_searh::before{
+    content: url(../img/coolicon.png);
+    position: absolute;
+    right: 279px;
+    top: 43px;
+    background: transparent;
+}
+.searh_button{
+    border: none; 
+    background: transparent;
+}
+.burger{
+    width: 50% ;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: black;
+}
+.main_title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.before_light_brown{
+    color: #FFC178;
+    font-size: 18px;
+    margin: 0;
+    position: relative;
+}
+.before_light_brown::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #FFC178;
+    width: 75px;
+    border: #FFC178 2px solid;
+    left: -118px;
+    top: 10px;
+}
+.inverted{
+    align-self: flex-start;
+    
+    
+}
+.inverted_text{
+    font-size: 18px;
+    font-weight: 600;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin-left: 85px;  
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+.social_img{
+    padding-bottom: 20px;
+}
+.above_title{
+    align-self: center;
+}
+.main_title{
+    font-size: 96px;
+    display: flex;
+    color: #fff;
+    /* text-align: left; */
+    /* width: 100%; */
+}
+.main_subtitle{
+    font-size: 88px;
+    font-weight: 400;
+}
+.Text_big{
+    align-self: center;
+    
+    
+}
+.bg_main_title{
+    text-align: left;
+    padding-top: 48px;
+    margin: 0;
+}
