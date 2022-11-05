@@ -335,7 +335,6 @@ h3, h4{
 .shop{
     padding: 77px 305px 93px 620px;
     position: relative;
-    
 }
 .shop::before{
     content: url(../img/iPhone\ 14.png);
@@ -344,6 +343,14 @@ h3, h4{
     left: 291px;
     top: 8px;
 }
+.number_of_reviws{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 400;
+    top: 66px;
+    left: 800px;
+}
+
 .product_title{
     font-size: 36px;
     color: #2203E4;
