@@ -198,9 +198,13 @@ margin-right: 96px;
 .float-left{
     float: left;
     position: relative;
-    margin: 68px 0 0 260px;
-    
+    margin: 68px 0 0 260px;   
 }
+.blue-l,
+.blue-r
+{    padding: 23px 0;
+}
+
 .float-right{
     float: right;
     position: relative;
@@ -216,7 +220,7 @@ margin-right: 96px;
 }
 .button-for-who{
     color: #2203E4;
-    margin: 426px auto 71px;
+    margin: 441px auto 71px;
     display: inline-block;
     padding: 10px 20px;
     border: 1px solid #2203E4;
