@@ -2,16 +2,17 @@
     box-sizing: border-box;
 }
 .wraper{
-    background-image: url(../img/background.png);
-    background-size: cover;
+    background-image: url(../img/background_2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 body{
     font-family: 'Open Sans', sans-serif;
 }
 header{
     display: flex;
-    padding: 58px 82px ;
-    margin-bottom: 138px;
+    padding: 0 82px ;
+    margin-bottom: 79px;
     justify-content: space-between;
 }
 
@@ -27,7 +28,7 @@ header{
     width: 25%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     position: relative;
 }
 .header_menu{
@@ -40,18 +41,27 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    
+}
+.header_menu:hover{
+    background-color: #305a5f;
 }
 .hd_searh::before{
     content: url(../img/coolicon.png);
     position: absolute;
-    right: 279px;
-    top: 43px;
+    right: 171px;
+    top: 44px;
     background: transparent;
 }
 .searh_button{
     border: none; 
     background: transparent;
+}
+.searh_button::placeholder{
+    padding-left: 30px;
+}
+.burger:hover{
+    border: 3px solid #39c40b;
+    background-color: #39c40b;
 }
 .burger{
     width: 50% ;
@@ -79,49 +89,833 @@ header{
     left: -118px;
     top: 10px;
 }
-.inverted{
-    align-self: flex-start;
-    
-    
-}
 .inverted_text{
     font-size: 18px;
     font-weight: 600;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     margin-left: 85px;  
+    color: #fff;
 }
+.inverted{
+    align-self: flex-start;
+    position: absolute;
+    top: 78px;
+}
+
 .social{
     display: flex;
     flex-direction: column;
     align-self: flex-start;
     margin-top: 20px;
     margin-left: 85px;
+    position: absolute;
+    top: 178px;
 }
 .social_img{
     padding-bottom: 20px;
 }
+.social_img:hover{
+    border: #39c40b 2px;
+    border-style: groove;
+}
 .above_title{
     align-self: center;
+    position: absolute;
+    left: 460px;
 }
 .main_title{
-    font-size: 96px;
+    /* font-size: 96px; */
     display: flex;
-    color: #fff;
-    /* text-align: left; */
-    /* width: 100%; */
+    /* color: #fff; */
+    position: relative;
+}
+.bg_main_title{
+    font-size: 96px;
+    font-weight: 700;
+    color: white;
 }
 .main_subtitle{
     font-size: 88px;
     font-weight: 400;
 }
 .Text_big{
-    align-self: center;
-    
-    
+    align-self: center;  
 }
 .bg_main_title{
     text-align: left;
     padding-top: 48px;
     margin: 0;
+}
+.scrol_down{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    align-self: center;
+    margin-top: 143px;
+    position: relative;
+}
+.scrol_down::before{
+    content: url(../img/arrow_downward_24px.png);
+    position: absolute;
+    /* left: 110px; */
+    right: -23px;
+}
+.transparent{
+    height: 633px;
+    
+}
+.below_main_bkgr{
+    display: flex;
+    /* padding: 0 230px; */
+    background: rgb(0, 0, 0);
+    position: relative;
+    
+}
+.landscape{
+    /* width: 38%;
+    position: absolute;
+    bottom: 30px; */
+    width: 50%;
+    /* position: relative; */
+}
+.enjoy_holiday{
+    display: flex;
+    padding: 0 229px;
+}
+.img_girl_hol{
+    width: 80%;
+    position: relative;
+    bottom: 22px;
+}
+.red_title{
+    color: #FBD784;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 145px;
+    position: relative;
+}
+.red_title::before{
+    content: "";
+    display: block;
+    background-color: #FBD784;
+    font-size: 10px;
+    position: absolute;
+    border: 1px solid #FBD784;
+    width: 70px;
+    left: 56px;
+    bottom: 10px;
+}
+.main_title_holiday{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    padding-left: 50px;
+}
+.toutist_info{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 50px;
+}
+.arrow{
+    color: #FBD784;
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 50px;
+    position: relative;
+}
+.arrow::after{
+    content: url(../img/arrow_px.png);
+    position: absolute;
+    left: 155px;
+    bottom: -3px;
+}
+h3{
+    margin: 9px;
+}
+.wraper_holiday{
+    width: 50%;
+}
+
+.fire_mountains{
+    padding: 250px 229px 0;
+    background-color: black;
+    position: relative;
+    display: flex;
+}
+.mountains_craters{
+   background-image: url(../img/mountains_craters.png);
+    /* background-size: 100%;  */
+    background-repeat: no-repeat;
+}
+.arrows{
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 463px; */
+    position: relative;
+    top: 463px;
+}
+.article{
+    padding-top : 533px; 
+    padding-bottom: 43px;
+}
+.craters_red_title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #FBD784;
+}
+.bf_bromo_af{
+    
+    
+}
+.craters_red_title::before{
+    content: "";
+    display: block;
+    background-color: #FBD784;
+    font-size: 10px;
+    position: relative;
+    border: 1px solid #FBD784;
+    width: 70px;
+    left: 415px;
+    bottom: -12px;
+}
+.craters_red_title::after{
+    content: "";
+    display: block;
+    background-color: #FBD784;
+    font-size: 10px;
+    position: relative;
+    border: 1px solid #FBD784;
+    width: 70px;
+    left: 575px;
+    bottom: 10px;
+
+}
+.craters_main-title{
+    font-size: 74px;
+    font-weight: 700;
+    color: #fff;
+}
+.craters_info{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+.craters_read{
+    color: #FBD784;
+    font-size: 18px;
+    font-weight: 700;
+    /* padding-bottom: 43px; */
+    /* position: relative; */
+}
+.craters_read::after{
+    content: url(../img/arrow_px.png);
+    position: relative;
+    bottom: -3px;
+}
+.text_mountais_craters{
+
+}
+.craters_red_title,
+.craters_main-title,
+.craters_info,
+.craters_read{
+    text-align: center;
+}
+.happy_girls{
+    display: flex;
+    padding: 0 229px;
+    background-color: black;
+    justify-content: space-between;
+}
+.text_culture{
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    justify-content: center;
+}
+
+.img_culture{
+    margin-top: 250px;
+}
+.red_title_happy{
+    position: relative;
+    padding-left: 97px;
+}
+.red_title_happy::before{
+    content: "";
+    display: block;
+    background-color: #FBD784;
+    font-size: 10px;
+    position: absolute;
+    border: 1px solid #FBD784;
+    width: 70px;
+    left: 6px;
+    bottom: 10px;
+}
+ 
+.red_title_happy,
+.read_more_culture{
+    color: #FBD784;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+}
+.read_more_culture::after{
+    content: url(../img/arrow_px.png);
+    position: absolute;
+    left: 105px;
+    bottom: -3px;
+}
+.title_main_happy{
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+}
+.margin_h3>h3{
+    margin: 0;
+}
+.about_culture{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+.lath{
+    display: flex;
+    background-color: black;
+    padding: 250px 229px 50px;
+    /* padding-left: 229px;
+    padding-right: 229px; */
+    justify-content: space-between;
+    
+}
+.logo_below{
+    font-size: 48px;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    
+}
+.near_button{
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    margin-right: 56px;
+}
+.explore{
+    display: flex;
+}
+.button_lath{
+    font-size: 17px;
+    font-weight: 700;
+    background-color: #FFA343;
+    padding: 24px 76px;
+    border-radius: 8px;
+}
+.button_lath:hover{
+    background-color: #39c40b;
+    font-size: 22px;
+    
+}
+.navigation{
+    background-color: black;
+    padding: 0 229px 134px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.go_vacation{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+.email_placeholder{
+    padding: 21px 221px 32px 15px;
+    border: none;
+    background-color: black;
+    color: #fff;
+}
+.email_placeholder::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+}
+.arrow_buuton{
+    background-color: #FFA343;
+    padding: 28px 30px;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    top: 4px;
+}
+.arrow_buuton:hover{
+    background-color: #39c40b;
+}
+.underline{
+    border-bottom: 1px solid #979797;
+}
+li,
+ul,
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+li{
+    font-size: 19px;
+    font-weight: 400;
+    padding-bottom: 34px;
+}
+nav{
+    height: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+a{
+    color: #fff;
+}
+li:first-child{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFA343;
+}
+li:last-child{
+    padding-bottom: 0;
+}
+.red_link{
+    color: #FFD1A0;
+}
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer_left{
+    margin-left: 229px;
+    justify-content: space-between;  
+}
+.footer_right{
+    margin-right: 229px; 
+}
+.footer_left,
+.footer_right{
+    width: 20%;
+    display: flex;
+    justify-content: inherit;
+}
+
+.footer_text{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+.under{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-top: 166px;
+    padding-bottom: 148px;
+}
+.social_footer:hover{
+    border: #39c40b 2px groove;
+}
+@media(max-width:1200px){
+    .bg_main_title{
+        font-size: 64px;
+    }
+    .main_subtitle{
+        font-size: 54px;
+    }
+    .transparent{
+        height: 444px;
+    }
+    .main_title_holiday{
+        font-size: 42px;
+    }
+    .img_girl_hol{
+        bottom: -65px;
+    }
+    .arrows{
+        top: 423px;
+    }
+    .fire_mountains{
+     
+    }
+    .craters_red_title::before{
+        left: 258px;
+    }
+    .craters_red_title::after{
+        left: 415px;
+    }
+    .craters_main-title{
+        font-size: 42px;
+    }
+    .title_main_happy{
+        font-size: 48px;
+    }
+    .underline{
+        height: 269px;
+    }
+    .arrow_buuton{
+        top: -46px;
+        right: -353px;
+    }
+    .email_placeholder{
+        position: relative;
+         top: 27px;
+    }
+    .navigation{
+        padding: 0 229px 142px;
+    }
+}
+@media(max-width:820px){
+    body{
+        background-color: black;
+    }
+    .wraper{
+        padding-bottom: 169px;
+    }
+    .transparent{
+        height: 0;
+    }
+    .above_title{
+        left: 271px
+    }
+    .bg_main_title{
+        font-size: 48px;
+    }
+    .main_subtitle{
+        font-size: 46px;
+    }
+    .main_title_holiday{
+        font-size: 28px;
+    }
+    .enjoy_holiday{
+        padding: 0 92px;
+    }
+    .red_title{
+        font-size: 16px;
+    }
+    .img_girl_hol{
+        bottom: -105px;
+    }
+    .mountains_craters{
+        background-size: 100%;
+    }
+    .fire_mountains{
+        padding: 145px 92px 0;
+ 
+    }
+    .arrows{
+        top: 192px;
+    }
+    .article{
+        padding-top: 128px;
+    }
+ 
+    .craters_main-title{
+        font-size: 28px;
+    }
+    .craters_red_title::before{
+        left: 199px;
+    }
+    .craters_red_title::after{
+        left: 367px;
+    }
+    .happy_girls{
+        padding-left: 92px;
+        padding-right: 92px;
+        display: inline-block;
+    }
+    .img_culture{
+        margin-top: 35px;
+        padding: 0 31px;
+    }
+    .text_culture{
+        margin-top: 69px;
+    }
+    .title_main_happy{
+        font-size: 36px;
+    }
+    .lath{
+        padding: 152px 92px 50px;
+    }
+    .logo_below{
+        font-size: 36px;
+        padding-top: 10px;
+    }
+    .near_button{
+        margin-right: 32px;
+    }
+    .navigation{
+        padding: 0 92px 142px;
+        flex-wrap: wrap-reverse;
+    }
+    .go_vacation{
+        padding: 50px 0 0;
+    }
+    .email_placeholder{
+        top: 15px;
+    }
+    .arrow_buuton{
+        top: 24px;
+        right: 0;
+    }
+    .footer_left{
+        margin-left: 92px;
+    }
+    .footer_right{
+        margin-right: 92px;
+        align-items: center;
+    }
+   
+}
+@media screen and (min-width:390px) and (max-width:819px){
+    header{
+        padding: 0;
+        margin-bottom: 57px;
+    }
+    .h3_logo{
+        font-size: 16px;
+    }
+    .hd_searh{
+        bottom: -8px;
+        left: 29px;
+    }
+    .header_menu{
+        width: 50px;
+        height: 50px;
+        border: 3px solid;
+        margin: 8px 5px 0 0;
+    }
+    .burger{
+        border: 2px solid;
+    }
+    .searh_button{
+        width: 100px;
+        margin-right: 23px;
+    }
+    .hd_searh::before{
+        right: 94px;
+        top: 21px;
+    }
+    .above_title{
+        left: 116px;
+        top: -14px;
+    }
+    .before_light_brown{
+        font-size: 14px;
+    }
+    .before_light_brown::before{
+        width: 36px;
+        border: 1px solid;
+        left: -47px;
+        top: 9px;
+    }
+    .bg_main_title{
+        font-size: 28px;
+        padding-top: 13px;
+    }
+    .main_subtitle{
+        font-size: 26px;
+    }
+    .inverted_text{
+        font-size: 12px;
+        margin-left: 31px;
+    }
+    .inverted{
+        top: -5px;
+    }
+    .social_img{
+        width: 13px;
+        
+    }
+    .social{
+        margin-left: 31px;
+        top: 42px;
+    }
+    .scrol_down{
+        font-size: 12px;
+        margin-top: 74px;
+    }
+    .enjoy_holiday{
+        display: block;
+        padding: 0;
+    }
+    .main_title_holiday{
+        font-size: 18px;
+        padding: 0 30px;
+    }
+    .wraper{
+        padding-bottom: 60px;
+    }
+    .wraper_holiday{
+        width: 100%;
+        
+    }
+    .landscape{
+        
+        width: 100%;
+    }
+    .img_girl_hol{
+        display: block;
+        bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .toutist_info{
+        font-size: 11px;
+        padding: 0 30px;
+        /* text-align: center; */
+    }
+    .red_title{
+        font-size: 9px;
+        padding-left: 60px;
+    }
+    .red_title::before{
+        bottom: 4px;
+        left: 30px;
+        width: 21px;
+    }
+    .arrow{
+        font-size: 12px;
+        padding: 0 30px;
+    }
+    .arrow::after{
+        left: 102px;
+        bottom: -4px;
+    }
+    .fire_mountains{
+        padding: 0 30px;
+    }
+    .arrows{
+        top: 106px;
+    }
+    .arrows>img{
+        width: 20px;
+    }
+    .craters_red_title{
+        font-size: 12px;
+        margin: 0 0 12px;
+    }
+    .article{
+        padding-top: 215px;
+    }
+    .craters_red_title::before{
+        width: 36px;
+        bottom: -8px;
+    }
+    .craters_red_title::after{
+        width: 36px;
+        left: 92px;
+        bottom: 8px;
+    }
+    .craters_main-title{
+        font-size: 16px;
+    }
+    .craters_info{
+        font-size: 12px;
+    }
+    .craters_read{
+        font-size: 12px;
+    }
+    .craters_read::after{
+        bottom: -4px;
+        right: -5px;
+    }
+    .text_mountais_craters{
+        margin-top: 121px;
+    }
+    .happy_girls{
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text_culture{
+        order: 2;
+        margin-top: 25px;
+    }
+    .red_title_happy{
+        font-size: 12px;
+    }
+    .red_title_happy::before{
+        bottom: 6px;
+    }
+    .title_main_happy{
+        font-size: 22px;
+    }
+    .about_culture{
+        font-size: 11px;
+    }
+    .read_more_culture{
+        font-size: 11px;
+    }
+    .read_more_culture::after{
+        left: 71px;
+        bottom: -4px;
+    }
+    .img_culture{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        order: 1;
+    }
+    .img_culture>img{
+        width: 100%;
+    }
+    .lath{
+        padding: 10px 30px;
+        display: block;
+    }
+    .logo_below{
+        font-size: 18px;
+        /* text-align: center; */
+        padding: 30px 30px 30px 0;
+    }
+    .near_button{
+        font-size: 16px;
+    }
+    .button_lath{
+        padding: 0px 25px;
+    }
+    .navigation{
+        padding: 30px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .go_vacation{
+        font-size: 18px;
+        top: 40px;
+        left: 39px;
+    }
+    
+    .email_placeholder{
+        padding: 0;
+        top: 40px;
+        left: 39px;
+    }
+    .arrow_buuton{
+        padding: 14px 15px;
+        top: 42px;
+    }
+    .underline{
+        height: 200px;
+        margin-right: 99px;
+        margin-bottom: 40px;
+    }
+    .services,
+    .About,
+    .Help{
+        margin-top: 65px;
+    }
 }
