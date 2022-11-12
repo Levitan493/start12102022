@@ -265,10 +265,6 @@ h3{
     font-weight: 700;
     color: #FBD784;
 }
-.bf_bromo_af{
-    
-    
-}
 .craters_red_title::before{
     content: "";
     display: block;
@@ -314,9 +310,7 @@ h3{
     position: relative;
     bottom: -3px;
 }
-.text_mountais_craters{
 
-}
 .craters_red_title,
 .craters_main-title,
 .craters_info,
@@ -529,12 +523,49 @@ footer{
 .social_footer:hover{
     border: #39c40b 2px groove;
 }
+@media(min-width:1201px){
+    .logo{
+        width: 33%;
+    }
+    .header_menu{
+        display: none; 
+    }
+    .open_menu{
+        width: 33%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .open_menu>div>h3{
+        font-weight: 600;
+        font-size: 18px;
+        color: #fff;
+        padding-top: 22px;
+        
+    }
+    .searh_button{
+        padding-top: 25px;
+    }
+    .hd_searh::before{
+        top: 38px;
+        right: 110px;
+    }
+    .searh_button::placeholder{
+        padding-left: 90px;
+    }
+}
+
 @media(max-width:1200px){
     .bg_main_title{
         font-size: 64px;
     }
     .main_subtitle{
         font-size: 54px;
+    }
+    .logo{
+        left: 192px;
+    }
+    .open_menu{
+        display: none;
     }
     .transparent{
         height: 444px;
@@ -547,9 +578,6 @@ footer{
     }
     .arrows{
         top: 423px;
-    }
-    .fire_mountains{
-     
     }
     .craters_red_title::before{
         left: 258px;
@@ -569,6 +597,9 @@ footer{
     .arrow_buuton{
         top: -46px;
         right: -353px;
+    }
+    .button_lath{
+        border: none;
     }
     .email_placeholder{
         position: relative;
@@ -901,12 +932,13 @@ footer{
     
     .email_placeholder{
         padding: 0;
-        top: 40px;
+        top: 53px;
         left: 39px;
     }
     .arrow_buuton{
         padding: 14px 15px;
-        top: 42px;
+        top: 24px;
+        left: 192px;
     }
     .underline{
         height: 200px;

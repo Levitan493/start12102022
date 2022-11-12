@@ -11,6 +11,7 @@ $main-section-font-size:15px;
 $weight400: 400;
 .main{
     background-image: url(../img/Mask_group.png);
+    background-repeat: no-repeat;
 }
 
 header{
@@ -136,7 +137,7 @@ header{
         padding: 5.5em 3em 0
     }
     
-    h3{
+    .skils{
         font-weight: 400;
         font-size: 20px;
         color: #151616;
