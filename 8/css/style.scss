@@ -12,6 +12,7 @@ $weight400: 400;
 .main{
     background-image: url(../img/Mask_group.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header{
@@ -29,7 +30,7 @@ header{
 }
 .logo{
     width: 24vw;
-    padding-left: 6.7rem;
+    padding-left: 6.7vw;
 }
 .nav_section{
     display: flex;
@@ -48,91 +49,100 @@ header{
         border-top: 1px solid #fff;
         position: absolute;
         width: 4.6rem;
-        top: 4.3rem;
+        bottom: 5.5em
         }
     }
     
+}
+.basket::before{
+        content:url(../img/shopping-basket_1.png);
+        position: absolute;
+        right: 19vw;
+        background-color: #281C14;
+        border-radius: 20px;
+        top: 2.7em;
+    }
+.basket::after{
+        content: url(../img/triangle_down.png);
+        position: absolute;
+        left: 10em;
+        top: 2.6em;
 }
 
 .basket{
     display: flex;
     position: relative;
-    padding: 2.4em 9em 2em 1em;;
+    padding: 2.4vw 10vw 5vw 3vw;
     width: 23vw;
-    &::before{
-        content:url(../img/shopping-basket_1.png);
-        position: absolute;
-        left: 1.2rem;
-        background-color: #281C14;
-        border-radius: 20px;
-        top: 2.7em;
     }
-    &::after{
-        content: url(../img/triangle_down.png);
-        position: absolute;
-        left: 8em;
-        top: 2.6em;
-}
-    }
-    button{
+    .button-basket{
         background-color: transparent;
         font-size: 15px;
         color: #fff;
-        // padding: 1.2em 1.3em 3.2em;
+        border: none;
         width: 9vw;
-        height: 7vh;
+        
     }
 .wrapper{
     padding-left: 9rem;
     padding-top: 6rem;
     width: 40vw;
-    padding-bottom: 15.56rem;
-    h3{
+    padding-bottom: 14rem;
+    .company-name{
         font-weight: 800;
-        font-size: 73px;
+        font-size: 4.56vw;
         color: #fff;
         margin: 0;
     }
-    p{
+    .advertising{
         font-weight: 400;
         font-size: 21px;
         color: #fff;
     }
-    button{
+    .view-products{
         color: #151616;
         font-weight: 500;
         font-size: 18px;
         background-color: #C98D5A;
         width: 17.75vw;
-        height: 12vh;
+        // height: 12vh;
         border-radius: 56px;
         text-align: center;
+        padding: 1.5em;
+        
     }
     
 }
+
+
 .choose_us{
     background-color: #EBEBEB;
-    h3{
+    .choose_text{
         font-weight: 800;
-        font-size: 60px;
+        font-size: 3.75vw;
         color: #151616;
         margin: 0;
         text-align: center;
         padding-top: 1.1em;
-        position: relative;
-        &::after{
+        // position: relative;
+        
+    }
+}
+.choose_us_spears{
+    position: relative;
+}
+.choose_us_spears::after{
             content: url(../img/spear.png);
             position: absolute;
             display: block;
-            top: 2.3em;
-            right: 6em;
+            right: 22.5em;
+            top: 10em;
         }
-    }
-}
 .our_skils{
     display: flex;
     justify-content: center;
     gap: 0 3rem;
+    padding-bottom: 5.25rem;
     img{
         padding: 5.5em 3em 0
     }
@@ -141,6 +151,302 @@ header{
         font-weight: 400;
         font-size: 20px;
         color: #151616;
+        margin: 0;
+        text-align: center;
+        padding-top: 1.1em;
     }
     
 }
+.catalog{
+    background-image: url(../img/fresh-brown-bread-on-the-table.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 8.81rem;
+    
+    .product{
+        color: #C4C4C4;
+        font-weight: 500;
+        font-size: 21px;
+        border: 1px solid #C4C4C4;
+        border-radius: 44px;
+        background-color: transparent;
+    }
+    
+}
+    
+    
+.catalog_buttons{
+    display: flex;
+    justify-content: center;
+    gap: 0 0.75rem;
+    padding-top: 4.62rem;
+    
+}
+
+.catalog_tittle{
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    padding-top: 1.1em;
+    font-weight: 800;
+    font-size: 3.75vw;
+    color: #fff;
+}
+.product_active{
+    background-color: #C98D5A;
+    color: #151616;font-weight: 500;
+    font-size: 21px;
+    border: 1px solid #C4C4C4;
+    border-radius: 44px;
+    padding: 1em 2.14em;
+}
+.product_all{
+    width: 15.81vw;
+    @extend .product
+}
+.showcase{
+    display: flex;
+    padding-top: 4.56rem;
+    justify-content: center;
+    column-gap: 3.18rem;
+}
+.showcase{
+    .product_wrapper{
+        
+        // display: flex;
+        background-color: #1F1F1F;
+        border-radius: 30px;
+        width: 19.3%;
+        padding: 0 1.58em 0 1.58em;
+        img{
+            width: 100%;
+        }
+        
+        h3{
+            font-weight: 700;
+            font-size: 24px;
+            color: #C4C4C4;
+            padding-bottom: 2em;
+            
+        }
+        p{
+            font-weight: 500;
+            font-size: 15px;
+            color: #C4C4C4;
+            margin: 0;
+            padding-bottom: 4.8em;
+            align-self: flex-end;
+        }
+    }
+
+}
+.product_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.price{
+    position: relative;
+    width: 90%;
+    text-align: end;
+    margin-left: 11em;
+    h4{
+        font-weight: 400;
+        font-size: 15px;
+        color:#151616;
+        background-color: #F59B4D;
+        padding: .6em .66em .6em 0;
+        
+    }
+
+}
+.price::after{
+    content: url(../img/Arrow\ 3.png);
+    position: absolute;
+    right: 13.4em;
+    top: 2em;
+}
+.about_us{
+    background-color: #EBEBEB;
+    padding-bottom: 5.5rem;
+    .title_about_us{
+        position: relative;
+        color: #151616;
+        font-weight: 800;
+        font-size: 3.75vw;
+        margin: 0;
+        padding-top: 3.81rem;
+        padding-bottom: 6.31rem;
+        text-align: center;
+    }
+    .info_about_us{
+        font-weight: 400;
+        font-size: 20px;
+        padding-left: 13.43rem;
+        padding-right: 13.43rem;
+    }
+    .title_about_us::after{
+        content: url(../img/spear.png);
+        position: absolute;
+        display: block;
+        right: 5.9em;
+        top: 2.4em;
+    }
+    .wish{
+        font-style: italic;
+        text-align: end;
+        font-weight: 400;
+        @extend .info_about_us
+        
+    }
+}
+.our-products{
+    @extend .catalog;
+    
+    .title-product{
+        color: #fff;
+        font-weight: 800;
+        font-size: 3.75vw;
+        margin: 0;
+        text-align: center;
+        padding-top: 1.45em;
+        padding-bottom: 1.4em;
+    }
+    .container{
+        display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+        padding: 0 20vw 0 20vw;
+        column-gap: 1.5em;
+    }
+}
+.restorant-with-bread{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.cake-crois{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer{
+    background-color: #121413;
+    padding: 0 13.37rem;
+    display: flex;
+}
+.footer-logo{
+    width: 25%;
+}
+.phone-number{
+    width: 25%;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    text-align: end;
+}
+.our-location{
+    width: 50%;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    span{
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+@media(max-width:1201px){
+    .logo{
+            padding-left: 0;
+        }
+    .container{
+        flex-wrap: wrap;
+        
+    }
+    .view-products{
+        font-size: 14px;
+    }
+    .choose_us_spears::after{
+        right: 10.5em;
+        top: 8em;
+    }
+    .title_about_us::after{
+        
+        right: 3.9em;
+    }
+    .title_about_us::after{
+    right: 14.9vw;
+}
+.price::after{
+    right: 14vw;
+}
+}
+@media(max-width:821px){
+    .logo{
+        margin-right: 59px;
+    }
+    .our_skils{
+        gap: 0;
+    }
+    .view-products{
+        font-size: 14px;
+        padding: 14px;
+    }
+    .nav_section{
+        flex-wrap: wrap;
+    }
+    .first_link::before{
+        top: 73px;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .basket::before{
+        top: 20px;
+        left: 49px;
+    }
+    .basket{
+        padding: 2.4vw 6vw 5vw 9vw;
+    }
+    .basket::after{
+        right: 36px;
+        bottom: 61px;
+        
+    }
+    .price{
+        margin-left: 30px;
+    }
+    .price::after{
+        right: 87px;
+    }
+    .choose_us_spears::after{
+        display: none;
+    }
+    .title_about_us::after{
+        display: none;
+    }
+    footer{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .phone-number{
+        font-size: 14px;
+    }
+}
+@media(max-width:391px){
+    .our_skils{
+        flex-wrap: wrap;
+    }
+    .catalog_buttons{
+        flex-wrap: wrap;
+    }
+    .info_about_us{
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
