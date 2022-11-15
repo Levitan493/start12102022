@@ -524,6 +524,12 @@ footer{
     border: #39c40b 2px groove;
 }
 @media(min-width:1201px){
+    .header_menu{
+        display: none;
+    }
+}
+
+@media(min-width:1201px){
     .logo{
         width: 33%;
     }
@@ -607,6 +613,29 @@ footer{
     }
     .navigation{
         padding: 0 229px 142px;
+    }
+}
+@media(max-width:1021px){
+    .happy_girls{
+        flex-wrap: wrap;
+    }
+    .navigation{
+        flex-wrap: wrap;
+   }
+   .transparent{
+    display: none;
+   }
+   .arrow_buuton{
+    position: inherit;
+
+   }
+   .email_placeholder{
+    position: inherit;
+   }
+}
+@media(max-width:961px){
+    .arrow_buuton{
+        position: relative;
     }
 }
 @media(max-width:820px){
@@ -828,6 +857,9 @@ footer{
     }
     .fire_mountains{
         padding: 0 30px;
+    }
+    .arrow_buuton{
+        
     }
     .arrows{
         top: 106px;
