@@ -37,7 +37,7 @@ header{
     justify-content:space-around;
     width: 53vw;
     div{
-        padding: 3em 1em;
+        padding: 3em 0;
         text-align: center;
     }
     .first_link{
@@ -104,7 +104,7 @@ header{
         font-weight: 500;
         font-size: 18px;
         background-color: #C98D5A;
-        width: 17.75vw;
+        
         // height: 12vh;
         border-radius: 56px;
         text-align: center;
@@ -135,7 +135,7 @@ header{
             content: url(../img/spear.png);
             position: absolute;
             display: block;
-            right: 22.5em;
+            right: 18.5em;
             top: 10em;
         }
 .our_skils{
@@ -143,6 +143,7 @@ header{
     justify-content: center;
     gap: 0 3rem;
     padding-bottom: 5.25rem;
+    flex-wrap: wrap;
     img{
         padding: 5.5em 3em 0
     }
@@ -161,26 +162,33 @@ header{
     background-image: url(../img/fresh-brown-bread-on-the-table.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 8.81rem;
-    
-    .product{
-        color: #C4C4C4;
-        font-weight: 500;
-        font-size: 21px;
-        border: 1px solid #C4C4C4;
-        border-radius: 44px;
-        background-color: transparent;
-    }
-    
-}
-    
-    
+    padding-bottom: 8.81rem;  
+}  
 .catalog_buttons{
     display: flex;
     justify-content: center;
     gap: 0 0.75rem;
     padding-top: 4.62rem;
+    flex-wrap: wrap;
     
+}
+.product_all{
+    font-size: 21px;
+}
+.catalog{
+    .catalog_buttons{
+        .product{
+        color: #C4C4C4;
+        font-weight: 500;
+        
+        border: 1px solid #C4C4C4;
+        border-radius: 44px;
+        background-color: transparent;
+        width: 10.81vw;
+        // padding: 1em 2.14em
+       
+        }
+    }
 }
 
 .catalog_tittle{
@@ -201,7 +209,7 @@ header{
     padding: 1em 2.14em;
 }
 .product_all{
-    width: 15.81vw;
+    width: 10.81vw;
     @extend .product
 }
 .showcase{
@@ -249,7 +257,7 @@ header{
     position: relative;
     width: 90%;
     text-align: end;
-    margin-left: 11em;
+    margin-left: 9em;
     h4{
         font-weight: 400;
         font-size: 15px;
@@ -302,7 +310,7 @@ header{
 }
 .our-products{
     @extend .catalog;
-    
+}   
     .title-product{
         color: #fff;
         font-weight: 800;
@@ -319,7 +327,8 @@ header{
         padding: 0 20vw 0 20vw;
         column-gap: 1.5em;
     }
-}
+
+
 .restorant-with-bread{
     display: flex;
     flex-direction: column;
@@ -364,23 +373,33 @@ footer{
         flex-wrap: wrap;
         
     }
-    .view-products{
-        font-size: 14px;
+    .wrapper{
+      .view-products{
+        font-size: 12px;
+        border: none;
+    }  
     }
     .choose_us_spears::after{
         right: 10.5em;
         top: 8em;
     }
-    .title_about_us::after{
+    .about_us{
+        .title_about_us::after{
         
         right: 3.9em;
     }
     .title_about_us::after{
     right: 14.9vw;
-}
-.price::after{
-    right: 14vw;
-}
+    } 
+    }
+   
+    .price::after{
+       right: 14vw;
+    }
+    .product_all,
+    .product_active{
+        font-size: 16px;
+    }
 }
 @media(max-width:821px){
     .logo{
@@ -413,20 +432,77 @@ footer{
     .basket::after{
         right: 36px;
         bottom: 61px;
-        
     }
+    .our_skils{
+       .skils{
+        font-size: 14px;
+       } 
+    }
+    
     .price{
         margin-left: 30px;
     }
     .price::after{
         right: 87px;
     }
+    .product_active{
+        font-size: 16px;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+     .catalog{
+        .product_all{
+        font-size: 14px;
+      }
+      
+    }
+    .catalog_buttons{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 5em 10em;
+    }
+    .product_active{
+        font-size: 14px;
+        padding-left: 1em; ;
+        padding-right: 1em ;
+        
+    }
+    .container{
+        padding: 0;
+    }
+    .cake-crois{
+        flex-direction: row;
+        flex-wrap: wrap;
+        img{
+            padding: 5px;
+        }
+    }
+    .showcase{
+        .product_wrapper{
+            h3{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
     .choose_us_spears::after{
         display: none;
     }
-    .title_about_us::after{
+    .about_us{
+       .title_about_us::after{
         display: none;
+    } 
     }
+    .about_us{
+        .info_about_us{
+            font-size: 14px;
+            padding-left: 8em;
+            padding-right: 8em;
+        }
+    } 
+    
     footer{
         padding-left: 25px;
         padding-right: 25px;
@@ -434,6 +510,16 @@ footer{
     .phone-number{
         font-size: 14px;
     }
+}
+@media(max-width:750px){
+    footer{
+        padding: 0;
+        flex-direction: column;
+    }
+    .price::after{
+        display: none;
+    }
+
 }
 @media(max-width:391px){
     .our_skils{
