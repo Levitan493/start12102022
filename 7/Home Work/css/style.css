@@ -858,9 +858,7 @@ footer{
     .fire_mountains{
         padding: 0 30px;
     }
-    .arrow_buuton{
-        
-    }
+    
     .arrows{
         top: 106px;
     }
@@ -963,13 +961,13 @@ footer{
     }
     
     .email_placeholder{
-        padding: 0;
+        padding-right: 15px;
         top: 53px;
         left: 39px;
     }
     .arrow_buuton{
         padding: 14px 15px;
-        top: 24px;
+        top: -28px;
         left: 192px;
     }
     .underline{
