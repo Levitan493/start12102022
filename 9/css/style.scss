@@ -40,9 +40,19 @@ header{
     font-size: 24px;
     color: $white;
 }
+.header-link:hover{
+    color: #FF9900;
+}
+.header-link-active{
+    // color: #FF9900;
+    @extend .header-link
+}
 .tour{
     @extend .header-link;
     color: $orange;
+}
+.tour:hover{
+    color: #fff;
 }
 .banner-text{
     display: flex;
@@ -66,7 +76,7 @@ header{
     color: $white;
     span{
         color: $orange;
-        padding-left: 8.5em;
+        padding-left: 7.5em;
     }
 
 }
@@ -75,7 +85,9 @@ header{
     width: 50%;
 }
 .our-story{
-    margin: 0 9rem;
+    padding: 8rem 9rem ;
+
+    background-color: #E5E5E5;
 }
 .story-title{
     font-weight: 700;
@@ -161,14 +173,632 @@ header{
     padding-top: 0.75em;
 }
 .Read-more{
+    background-color: #e5e5e5;
     font-weight: 700;
     font-size: 24px;
-    margin: 0 9vw 0 81vw;
+    text-decoration: #FF6 underline 3px;
+    display: inline;
     text-align: end;
-    border-bottom: #FFE600 2px solid;
-    display: inline-block;
+    // border-bottom: #ffe600 2px solid;
+    // margin-bottom: 8rem;
+    // position: relative;
+    // left: 45.8em;
     h3{
         margin: 0;
     }
+}
+.Read-more:hover{
+    color: #FF9900;
+}
+.our-collection{
+    overflow: hidden;
+    position: relative;  
+}
+.upper-line,
+.under-line{
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+.upper-line{
+    top: 17.9em;
     
 }
+.under-line{
+    bottom: 7.6em;
+}
+.cities{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 8rem 9rem 0;
+    justify-items: center;
+    z-index: 2;
+    
+    div{
+        // background-image: url(../img/background-bland.png),url(../img/background-bland.png);
+        width: 18vw;
+        
+        img{
+            width: 100%;
+        }
+    }
+}
+.London{
+    background-image: url(../img/London.png);
+    width: 18vw;
+    
+}
+.Dubai{
+    background-image: url(../img/Dubai.png);
+}
+.Paries{
+    background-image: url(../img/Paries.png);
+}
+.NewYork{
+    background-image: url(../img/NewYork.png);
+}
+.title-collection{
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0;
+    padding: 2em 4em 0;
+    span{
+        color: $orange;
+    }
+}
+.description{
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    padding: 14em 1em 1em;
+    span{
+        font-weight: 700;
+        font-size: 22px;
+        text-decoration: underline yellow 3px;
+    }
+
+}
+
+.viev-more{
+    
+    font-weight: 700;
+    font-size: 24px;
+    
+    text-decoration: #FF6 underline 3px;
+    display: inline;
+    text-align: end;
+    h3{
+        padding-left: 6em;
+        padding-right: 6em;
+    }
+}
+.viev-more:hover{
+    color: #FF9900;
+}
+.vintage-tour{
+    background-image: url(../img/background-charge.png);
+    padding: 4em 9em 19em;
+    margin-top: 5em;
+}
+.charge-end-text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    
+}
+
+.tittle-tour{
+    font-weight: 700;
+    font-size: 40px;
+    span{
+        color: #FF9900;
+    }
+}
+.right-from-charge{
+    font-weight: 700;
+    font-size: 40px;
+    span{
+        color: #FF9900;
+    }
+    
+}
+.right-for-ch-under{
+   font-weight: 400;
+        font-size: 18px;
+        span{
+            font-weight: 700;
+            font-size: 24px;
+            text-decoration: underline 3px #FF6;
+            padding-left: 19em;
+        } 
+        span:hover{
+            color: #FF9900;
+        }
+}
+.many-photos{
+    // padding: 4em 9em;
+    position: relative;
+    overflow: hidden;
+    
+}
+.tittle-photo{
+    padding: 2em 3.7em 0;
+    font-weight: 700;
+    font-size: 40px;
+    span{
+        color: #FF9900;
+    }
+}
+.upper-line-photo,
+.under-line-photo{
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+.upper-line-photo{
+    top: 20em;
+}
+.under-line-photo{
+    bottom: 13em;
+}
+
+.photo-set{
+    position: relative;
+    padding: 4em 9em;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    z-index: 2;
+    
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.service4{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.service11-1{
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.tasting{
+    grid-column-start: 11;
+    grid-column-end: 19;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.party{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.reception{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.whisky{
+    grid-column-start: 11;
+    grid-column-end: 14;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.citchen{
+    grid-column-start: 14;
+    grid-column-end: 16;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.dish{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.foto-dish{
+    grid-column-start: 14;
+    grid-column-end: 16;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+}
+.serving{
+    grid-column-start: 16;
+    grid-column-end: 19;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.under-many-photos{
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: underline #FFE600;
+    text-align: end;
+    padding: 0 6em;
+    h3:hover{
+        color: #FF9900;
+    }
+}
+.awards{
+    background-color: #F6FDEE;
+}
+.tittle-awards{
+    font-weight: 700;
+    font-size: 40px;
+    span{
+        color: #FF9900;
+    }
+    padding: 2em 4em 0;
+}
+body{
+    .awards-grid{
+    padding: 4em 9em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 5em;
+    div{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+}
+    
+
+
+.left-top{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.center-big{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
+.right-top{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.left-bottom{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+.right-bottom{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 7;
+}
+footer{
+    background-image: url(../img/footer-background.png);
+    background-repeat: no-repeat;
+    padding: 3em 10em;
+    
+    
+}
+.footer-contact{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.footer-tittle{
+    font-weight: 700;
+    font-size: 40px;
+    span{
+        color: #FF9900;
+    }
+}
+.footer-contact{
+    gap: 1em;
+    .Contact-with-us{
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: .55em;
+    
+    
+    span{
+        color: #FF9900;
+    }
+
+}
+}
+.footer-contact{
+    h3{
+        
+        font-weight: 700;
+        font-size: 30px;
+    }
+}
+.left-big{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.LONDON-OFFICE{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.DUBAI-OFFICE{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.PARIS-OFFICE{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.NEWYORK-OFFICE{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.list{
+    grid-column-start:3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    ul{
+        padding-left: 0;
+    }
+
+    li{
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.8;
+        list-style-type: none;
+        border-bottom: black solid 1px;
+    }
+}
+.button-footer{
+    
+    button{
+        // margin: 1em 0 2.2em 24.6em;
+        margin-left: 63.8vw;
+        font-weight: 700;
+        font-size: 40px;
+        background-color: #FF9900;
+        border: none;
+        border-radius: 5px;
+        padding: .5em 1.67em 0.4em;
+
+    }
+    button:hover{
+        background-color: #FFE600;
+        color: blue;
+    }
+}
+.lower-footer{
+    border-top: solid black 1px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    h3{
+        // width: 50%;
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 1em;
+    }
+}
+.lower-right{
+    text-align: end;
+}
+@media(max-width:1227px){
+.header-link,
+.header-link-active{
+    font-size: 16px;
+}
+.two-colors,
+.story-title,
+.title-collection,
+.right-from-charge,
+.tittle-tour,
+.tittle-photo,
+.tittle-awards,
+.footer-tittle,
+.button-footer,
+.left-big{
+    font-size: 32px;
+    
+}
+footer{
+    .footer-contact{
+        .Contact-with-us{
+        font-size: 32px;
+   }
+    }
+   
+}
+.button-footer{
+    button{
+        font-size: 32px;
+    }
+}
+.banner-text,
+.our-story,
+.cities,
+.vintage-tour{
+    padding: 10em;
+}
+.photo-set{
+    padding: 4em 5em;
+}
+footer{
+    padding: 3em 1em;
+}
+.charge-end-text{
+    display: block;
+}
+.brand{
+        font-size: 64px;
+    }
+    .button-footer{
+        .butt-footer{
+        margin-left: 26em;
+    }
+    }
+    
+    
+}
+@media(max-width:977px){
+    .header-link-group{
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .brand{
+        font-size: 40px;
+    }
+    .banner-text,
+    .our-story,
+    .cities,
+    .vintage-tour{
+        padding: 2em;
+    }
+    footer{
+      .footer-contact{
+          .LONDON-OFFICE,
+           .DUBAI-OFFICE,
+           .PARIS-OFFICE,
+           .NEWYORK-OFFICE,
+           .list{
+                 h3{
+            font-size: 22px;
+                   }
+               }
+       
+        }
+    }
+    .Isadore-Sharpe{
+        font-size: 22px;
+    }
+   .two-colors,
+   .story-title,
+   .title-collection,
+   .right-from-charge,
+   .tittle-tour,
+   .tittle-photo,
+   .tittle-awards,
+   .footer-tittle,
+   .button-footer{
+    font-size: 26px;
+   }
+   .footer-tittle{
+    li{
+        font-size: 22px;
+    }
+   }
+   .list{
+    li{
+        font-size: 22px;
+    }
+   }
+   .photo-set{
+    padding: 3em 0;
+   }
+   .awards-grid{
+    padding:3em 0 ;
+   }
+   .button-footer{
+    button{
+        font-size: 22px;
+    }
+   }
+
+.button-footer{
+    .butt-footer{
+    margin-left: 20em;
+}
+}
+}
+@media(max-width:754px){
+    
+    .left-banner{
+        .brand{
+            font-size: 28px;
+        }
+    }
+    }
+    .footer-contact{
+        display: block;
+    }
+    .charge-end-text{
+        img{
+            width: 95%;
+        }
+    }
+    body{
+       .awards-grid{
+        display: inline-block;
+    } 
+    }
+    
+    .button-footer{
+        .butt-footer{
+        margin-left: 0em;
+    }
+    }
+
+@media(max-width:530px){
+    .two-colors,
+   .story-title,
+   .title-collection,
+   .right-from-charge,
+   .tittle-tour,
+   .tittle-photo,
+   .tittle-awards,
+   .footer-tittle,
+   .button-footer{
+    font-size: 18px;
+   }
+   .Isadore-Sharpe{
+    font-size: 12px;
+   }
+   .story-content{
+    display: inline-block;
+   }
+   .under-many-photos{
+    h3{
+        font-size: 16px;
+    }
+   }
+   .viev-more{
+    h3{
+        font-size: 16px;
+    }
+   }
+   .right-for-ch-under{
+    span,
+    .under-many-photos{
+        font-size: 16px;
+    }
+   }
+}
+
+  
+
+
+    
