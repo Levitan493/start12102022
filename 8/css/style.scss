@@ -36,6 +36,7 @@ header{
     display: flex;
     justify-content:space-around;
     width: 53vw;
+    gap: 5px;
     div{
         padding: 3em 0;
         text-align: center;
@@ -60,13 +61,13 @@ header{
         right: 19vw;
         background-color: #281C14;
         border-radius: 20px;
-        top: 2.7em;
+        top: 3vw;
     }
 .basket::after{
         content: url(../img/triangle_down.png);
         position: absolute;
-        left: 10em;
-        top: 2.6em;
+        left: 11vw;
+        top: 3.2vw;
 }
 
 .basket{
@@ -81,6 +82,7 @@ header{
         color: #fff;
         border: none;
         width: 9vw;
+        margin-top: 8px;
         
     }
 .wrapper{
@@ -131,13 +133,17 @@ header{
 .choose_us_spears{
     position: relative;
 }
-.choose_us_spears::after{
-            content: url(../img/spear.png);
-            position: absolute;
-            display: block;
-            right: 18.5em;
-            top: 10em;
-        }
+.img-spear{
+    display: block;
+    margin: 0 auto;
+}
+// .choose_us_spears::after{
+//             content: url(../img/spear.png);
+//             position: absolute;
+//             display: block;
+//             right: 18.5em;
+//             top: 10em;
+//         }
 .our_skils{
     display: flex;
     justify-content: center;
@@ -174,22 +180,13 @@ header{
 }
 .product_all{
     font-size: 21px;
+    background-color: transparent;
+    border-radius: 44px;
+    color: #C4C4C4;
+    border: 1px solid;
 }
-.catalog{
-    .catalog_buttons{
-        .product{
-        color: #C4C4C4;
-        font-weight: 500;
-        
-        border: 1px solid #C4C4C4;
-        border-radius: 44px;
-        background-color: transparent;
-        width: 10.81vw;
-        // padding: 1em 2.14em
-       
-        }
-    }
-}
+
+
 
 .catalog_tittle{
     color: #fff;
@@ -209,8 +206,10 @@ header{
     padding: 1em 2.14em;
 }
 .product_all{
-    width: 10.81vw;
-    
+    font-size: 21px;
+    border: 1px solid #C4C4C4;
+    border-radius: 44px;
+    padding: 1em 2.14em;
 }
 .showcase{
     display: flex;
@@ -274,6 +273,9 @@ header{
     right: 13.4em;
     top: 2em;
 }
+.spear-under-about-us{
+    margin-bottom: 50px;
+}
 .about_us{
     background-color: #EBEBEB;
     padding-bottom: 5.5rem;
@@ -284,7 +286,7 @@ header{
         font-size: 3.75vw;
         margin: 0;
         padding-top: 3.81rem;
-        padding-bottom: 6.31rem;
+        padding-bottom: 2.31rem;
         text-align: center;
     }
     .info_about_us{
@@ -293,13 +295,13 @@ header{
         padding-left: 13.43rem;
         padding-right: 13.43rem;
     }
-    .title_about_us::after{
-        content: url(../img/spear.png);
-        position: absolute;
-        display: block;
-        right: 5.9em;
-        top: 2.4em;
-    }
+    // .title_about_us::after{
+    //     content: url(../img/spear.png);
+    //     position: absolute;
+    //     display: block;
+    //     right: 5.9em;
+    //     top: 2.4em;
+    // }
     .wish{
         font-style: italic;
         text-align: end;
@@ -373,16 +375,17 @@ footer{
         flex-wrap: wrap;
         
     }
+    .basket::before,
+    .basket::after{
+        top: 4.2vw;
+    }
     .wrapper{
       .view-products{
         font-size: 12px;
         border: none;
     }  
     }
-    .choose_us_spears::after{
-        right: 10.5em;
-        top: 8em;
-    }
+   
     .about_us{
         .title_about_us::after{
         
@@ -400,10 +403,34 @@ footer{
     .product_active{
         font-size: 16px;
     }
+    footer{
+        padding: 0 6rem;
+    }
+    .phone-number{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:864px){
+    .img-spear{
+        display: none;
+    }
 }
 @media(max-width:821px){
     .logo{
         margin-right: 59px;
+    }
+    .basket{
+        padding: 2.4vw 6vw 5vw 9vw;
+    }
+    .basket::after{
+        // left: 9em;
+        // top: 2em;
+        left: 18vw;
+    }
+    .basket::before{
+        top: 3vw;
+        left: 5vw;
     }
     .our_skils{
         gap: 0;
@@ -422,21 +449,15 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    .basket::before{
-        top: 20px;
-        left: 49px;
-    }
-    .basket{
-        padding: 2.4vw 6vw 5vw 9vw;
-    }
-    .basket::after{
-        right: 36px;
-        bottom: 61px;
-    }
+    
+    
     .our_skils{
        .skils{
         font-size: 14px;
        } 
+    }
+    .spear{
+        display: none;
     }
     
     .price{
@@ -453,18 +474,24 @@ footer{
      .catalog{
         .product_all{
         font-size: 14px;
+        
       }
       
     }
     .catalog_buttons{
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         flex-direction: column;
         padding: 5em 10em;
     }
+    
+    // .big{
+    //     width: 50px;
+    // }
     .product_active{
         font-size: 14px;
-        padding-left: 1em; ;
-        padding-right: 1em ;
+        // padding-left: 1em; ;
+        // padding-right: 1em ;
+        // width: 89px;
         
     }
     .container{
@@ -512,14 +539,28 @@ footer{
     }
 }
 @media(max-width:750px){
-    footer{
-        padding: 0;
-        flex-direction: column;
+    .showcase{
+        flex-wrap: wrap;
     }
     .price::after{
         display: none;
     }
-
+    .price{
+        margin-left: 2vw;
+    }
+    .showcase{
+        .product_wrapper{
+            width: 33%;
+            padding: 0;
+            h3{
+            font-size: 14px;
+           }
+    } 
+    footer{
+        padding: 0;
+        flex-direction: column;
+    }
+}
 }
 @media(max-width:391px){
     .our_skils{
