@@ -1,258 +1,307 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: 'Philosopher', sans-serif;
-    a{
+
+    a {
         text-decoration: none;
     }
 }
-$black:black;
-$white:#fff;
-$orange:#FF9900;
-header{
-    display: flex ;
+
+$black: black;
+$white: #fff;
+$orange: #FF9900;
+
+header {
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.banner{
+
+.banner {
     background-image: url(../img/banner-change.png);
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
-.header-link-group{
+
+.header-link-group {
     display: flex;
     width: 35%;
     justify-content: space-around;
-    
+
 }
-.two-colors{
+
+.two-colors {
     font-weight: 400;
     font-size: 40px;
-    color:$white;
-    span{
+    color: $white;
+
+    span {
         color: $orange;
     }
 }
-.header-link{
+
+.header-link {
     font-weight: 400;
     font-size: 24px;
     color: $white;
 }
-.header-link:hover{
+
+.header-link:hover {
     color: #FF9900;
 }
-.header-link-active{
+
+.header-link-active {
     // color: #FF9900;
     @extend .header-link
 }
-.tour{
+
+.tour {
     @extend .header-link;
     color: $orange;
 }
-.tour:hover{
+
+.tour:hover {
     color: #fff;
 }
-.banner-text{
+
+.banner-text {
     display: flex;
     justify-content: center;
     padding: 14em 17em;
 }
-.brand{
+
+.brand {
     font-weight: 400;
     font-size: 80px;
     color: $white;
     text-align: right;
     padding-right: 2em;
-    span{
+
+    span {
         color: $orange;
     }
 
 }
-.Isadore-Sharpe{
+
+.Isadore-Sharpe {
     font-weight: 400;
     font-size: 34px;
     color: $white;
-    span{
+
+    span {
         color: $orange;
         padding-left: 7.5em;
     }
 
 }
+
 .left-banner,
-.right-banner{
+.right-banner {
     width: 50%;
 }
-.our-story{
-    padding: 8rem 9rem ;
+
+.our-story {
+    padding: 8rem 9rem;
 
     background-color: #E5E5E5;
 }
-.story-title{
+
+.story-title {
     font-weight: 700;
     font-size: 40px;
-    span{
+
+    span {
         color: $orange;
     }
 }
-.story-content{
-    
+
+.story-content {
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     column-gap: 3.43rem;
-    img{
+
+    img {
         width: 100%;
-    }     
-     
+    }
+
 }
 
-.story-subtitle{
+.story-subtitle {
     font-weight: 400;
     font-size: 18px;
     color: $black;
     // text-align: center;
     margin: 0;
 }
-.story{
+
+.story {
     font-weight: 700;
     font-size: 24px;
     color: $orange;
     // text-align: center;
     margin: 0;
 }
-.east-sity{
+
+.east-sity {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.Distinct{
+
+.Distinct {
     grid-column-start: 2;
     grid-column-end: 3;
     text-align: center;
 }
-.water-sity{
+
+.water-sity {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.Passionate{
-    
+
+.Passionate {
+
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.big-img{
+
+.big-img {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 6;
 }
-.World-class{
+
+.World-class {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.yellow-cars{
+
+.yellow-cars {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 6;
     padding-top: 0.75em;
 }
-.cambodia{
+
+.cambodia {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 6;
     padding-top: 0.75em;
 }
-.Read-more{
+
+.Read-more {
     background-color: #e5e5e5;
     font-weight: 700;
     font-size: 24px;
     text-decoration: #FF6 underline 3px;
     display: inline;
     text-align: end;
+
     // border-bottom: #ffe600 2px solid;
     // margin-bottom: 8rem;
     // position: relative;
     // left: 45.8em;
-    h3{
+    h3 {
         margin: 0;
     }
 }
-.Read-more:hover{
+
+.Read-more:hover {
     color: #FF9900;
 }
-.our-collection{
+
+.our-collection {
     overflow: hidden;
-    position: relative;  
+    position: relative;
 }
+
 .upper-line,
-.under-line{
+.under-line {
     position: absolute;
     z-index: 1;
     overflow: hidden;
 }
-.upper-line{
+
+.upper-line {
     top: 17.9em;
-    
+
 }
-.under-line{
+
+.under-line {
     bottom: 7.6em;
 }
-.cities{
+
+.cities {
     display: grid;
     position: relative;
     grid-template-columns: repeat(4, 1fr);
     padding: 8rem 9rem 0;
     justify-items: center;
     z-index: 2;
-    
-    div{
+
+    div {
         // background-image: url(../img/background-bland.png),url(../img/background-bland.png);
         width: 18vw;
-        
-        img{
+
+        img {
             width: 100%;
         }
     }
 }
-.London{
+
+.London {
     background-image: url(../img/London.png);
     width: 18vw;
-    
+
 }
-.Dubai{
+
+.Dubai {
     background-image: url(../img/Dubai.png);
 }
-.Paries{
+
+.Paries {
     background-image: url(../img/Paries.png);
 }
-.NewYork{
+
+.NewYork {
     background-image: url(../img/NewYork.png);
 }
-.title-collection{
+
+.title-collection {
     font-weight: 700;
     font-size: 40px;
     margin: 0;
     padding: 2em 4em 0;
-    span{
+
+    span {
         color: $orange;
     }
 }
-.description{
+
+.description {
     font-weight: 700;
     font-size: 16px;
     color: #fff;
     padding: 14em 1em 1em;
-    span{
+
+    span {
         font-weight: 700;
         font-size: 22px;
         text-decoration: underline yellow 3px;
@@ -260,90 +309,106 @@ header{
 
 }
 
-.viev-more{
-    
+.viev-more {
+
     font-weight: 700;
     font-size: 24px;
-    
+
     text-decoration: #FF6 underline 3px;
     display: inline;
     text-align: end;
-    h3{
+
+    h3 {
         padding-left: 6em;
         padding-right: 6em;
     }
 }
-.viev-more:hover{
+
+.viev-more:hover {
     color: #FF9900;
 }
-.vintage-tour{
+
+.vintage-tour {
     background-image: url(../img/background-charge.png);
     padding: 4em 9em 19em;
     margin-top: 5em;
 }
-.charge-end-text{
+
+.charge-end-text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    
+
 }
 
-.tittle-tour{
+.tittle-tour {
     font-weight: 700;
     font-size: 40px;
-    span{
+
+    span {
         color: #FF9900;
     }
 }
-.right-from-charge{
+
+.right-from-charge {
     font-weight: 700;
     font-size: 40px;
-    span{
+
+    span {
         color: #FF9900;
     }
-    
+
 }
-.right-for-ch-under{
-   font-weight: 400;
-        font-size: 18px;
-        span{
-            font-weight: 700;
-            font-size: 24px;
-            text-decoration: underline 3px #FF6;
-            padding-left: 19em;
-        } 
-        span:hover{
-            color: #FF9900;
-        }
+
+.right-for-ch-under {
+    font-weight: 400;
+    font-size: 18px;
+
+    span {
+        font-weight: 700;
+        font-size: 24px;
+        text-decoration: underline 3px #FF6;
+        padding-left: 19em;
+    }
+
+    span:hover {
+        color: #FF9900;
+    }
 }
-.many-photos{
+
+.many-photos {
     // padding: 4em 9em;
     position: relative;
     overflow: hidden;
-    
+
 }
-.tittle-photo{
+
+.tittle-photo {
     padding: 2em 3.7em 0;
     font-weight: 700;
     font-size: 40px;
-    span{
+
+    span {
         color: #FF9900;
     }
 }
+
 .upper-line-photo,
-.under-line-photo{
+.under-line-photo {
     overflow: hidden;
     position: absolute;
     z-index: 1;
 }
-.upper-line-photo{
+
+.upper-line-photo {
     top: 20em;
 }
-.under-line-photo{
+
+.under-line-photo {
     bottom: 13em;
 }
 
-.photo-set{
+.photo-set {
     position: relative;
     padding: 4em 9em;
     display: grid;
@@ -351,223 +416,258 @@ header{
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     z-index: 2;
-    
-    img{
+
+    img {
         width: 100%;
         height: 100%;
     }
 }
-.service4{
+
+.service4 {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.service11-1{
+
+.service11-1 {
     grid-column-start: 6;
     grid-column-end: 11;
     grid-row-start: 1;
     grid-row-end: 5;
 }
-.tasting{
+
+.tasting {
     grid-column-start: 11;
     grid-column-end: 19;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.party{
+
+.party {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
 }
-.reception{
+
+.reception {
     grid-column-start: 3;
     grid-column-end: 6;
     grid-row-start: 3;
     grid-row-end: 5;
 }
-.whisky{
+
+.whisky {
     grid-column-start: 11;
     grid-column-end: 14;
     grid-row-start: 3;
     grid-row-end: 5;
 }
-.citchen{
+
+.citchen {
     grid-column-start: 14;
     grid-column-end: 16;
     grid-row-start: 3;
     grid-row-end: 4;
 }
-.dish{
+
+.dish {
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 4;
     grid-row-end: 5;
 }
-.foto-dish{
+
+.foto-dish {
     grid-column-start: 14;
     grid-column-end: 16;
     grid-row-start: 4;
     grid-row-end: 5;
 
 }
-.serving{
+
+.serving {
     grid-column-start: 16;
     grid-column-end: 19;
     grid-row-start: 3;
     grid-row-end: 5;
 }
-.under-many-photos{
+
+.under-many-photos {
     font-weight: 700;
     font-size: 24px;
     text-decoration: underline #FFE600;
     text-align: end;
     padding: 0 6em;
-    h3:hover{
+
+    h3:hover {
         color: #FF9900;
     }
 }
-.awards{
+
+.awards {
     background-color: #F6FDEE;
 }
-.tittle-awards{
+
+.tittle-awards {
     font-weight: 700;
     font-size: 40px;
-    span{
+
+    span {
         color: #FF9900;
     }
+
     padding: 2em 4em 0;
 }
-body{
-    .awards-grid{
+
+
+.awards-grid {
     padding: 4em 9em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 5em;
-    div{
-        img{
+
+    div {
+        img {
             width: 100%;
             height: 100%;
         }
     }
 }
-}
-    
 
 
-.left-top{
+
+
+.left-top {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
 }
-.center-big{
+
+.center-big {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 7;
 }
-.right-top{
+
+.right-top {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.left-bottom{
+
+.left-bottom {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 7;
 }
-.right-bottom{
+
+.right-bottom {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 7;
 }
-footer{
+
+footer {
     background-image: url(../img/footer-background.png);
     background-repeat: no-repeat;
     padding: 3em 10em;
-    
-    
+
+
 }
-.footer-contact{
+
+.footer-contact {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
 
-.footer-tittle{
+.footer-tittle {
     font-weight: 700;
     font-size: 40px;
-    span{
-        color: #FF9900;
-    }
-}
-.footer-contact{
-    gap: 1em;
-    .Contact-with-us{
-    font-weight: 700;
-    font-size: 40px;
-    margin-top: .55em;
-    
-    
-    span{
-        color: #FF9900;
-    }
 
+    span {
+        color: #FF9900;
+    }
 }
+
+.footer-contact {
+    gap: 1em;
+
+    .Contact-with-us {
+        font-weight: 700;
+        font-size: 40px;
+        margin-top: .55em;
+
+
+        span {
+            color: #FF9900;
+        }
+
+    }
 }
-.footer-contact{
-    h3{
-        
+
+.footer-contact {
+    h3 {
+
         font-weight: 700;
         font-size: 30px;
     }
 }
-.left-big{
+
+.left-big {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.LONDON-OFFICE{
+
+.LONDON-OFFICE {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-.DUBAI-OFFICE{
+
+.DUBAI-OFFICE {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-.PARIS-OFFICE{
+
+.PARIS-OFFICE {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-.NEWYORK-OFFICE{
+
+.NEWYORK-OFFICE {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.list{
-    grid-column-start:3;
+
+.list {
+    grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    ul{
+
+    ul {
         padding-left: 0;
     }
 
-    li{
+    li {
         font-weight: 400;
         font-size: 30px;
         line-height: 1.8;
@@ -575,9 +675,10 @@ footer{
         border-bottom: black solid 1px;
     }
 }
-.button-footer{
-    
-    button{
+
+.button-footer {
+
+    button {
         // margin: 1em 0 2.2em 24.6em;
         margin-left: 63.8vw;
         font-weight: 700;
@@ -588,217 +689,320 @@ footer{
         padding: .5em 1.67em 0.4em;
 
     }
-    button:hover{
+
+    button:hover {
         background-color: #FFE600;
         color: blue;
     }
 }
-.lower-footer{
+
+.lower-footer {
     border-top: solid black 1px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    h3{
+
+    h3 {
         // width: 50%;
         font-weight: 700;
         font-size: 18px;
         margin-top: 1em;
     }
 }
-.lower-right{
+
+.lower-right {
     text-align: end;
 }
-@media(max-width:1227px){
-.header-link,
-.header-link-active{
-    font-size: 16px;
-}
-.two-colors,
-.story-title,
-.title-collection,
-.right-from-charge,
-.tittle-tour,
-.tittle-photo,
-.tittle-awards,
-.footer-tittle,
-.button-footer,
-.left-big{
-    font-size: 32px;
-    
-}
-footer{
-    .footer-contact{
-        .Contact-with-us{
+
+@media(max-width:1227px) {
+
+    .header-link,
+    .header-link-active {
+        font-size: 16px;
+    }
+
+    .two-colors,
+    .story-title,
+    .title-collection,
+    .right-from-charge,
+    .tittle-tour,
+    .tittle-photo,
+    .tittle-awards,
+    .footer-tittle,
+    .button-footer,
+    .left-big {
         font-size: 32px;
-   }
+
     }
-   
-}
-.button-footer{
-    button{
-        font-size: 32px;
+    .awards-grid{
+      padding: 4em 2em;
     }
-}
-.banner-text,
-.our-story,
-.cities,
-.vintage-tour{
-    padding: 10em;
-}
-.photo-set{
-    padding: 4em 5em;
-}
-footer{
-    padding: 3em 1em;
-}
-.charge-end-text{
-    display: block;
-}
-.brand{
-        font-size: 64px;
+
+    footer {
+        .footer-contact {
+            .Contact-with-us {
+                font-size: 32px;
+            }
+        }
+
     }
-    .button-footer{
-        .butt-footer{
-        margin-left: 26em;
+
+    .button-footer {
+        button {
+            font-size: 32px;
+            margin-left: 19em;
+        }
     }
-    }
-    
-    
-}
-@media(max-width:977px){
-    .header-link-group{
-        flex-wrap: wrap;
-        gap: 1em;
-    }
-    .brand{
-        font-size: 40px;
-    }
+
     .banner-text,
     .our-story,
     .cities,
-    .vintage-tour{
-        padding: 2em;
+    .vintage-tour {
+        padding: 10em;
     }
-    footer{
-      .footer-contact{
-          .LONDON-OFFICE,
-           .DUBAI-OFFICE,
-           .PARIS-OFFICE,
-           .NEWYORK-OFFICE,
-           .list{
-                 h3{
-            font-size: 22px;
-                   }
-               }
-       
+
+    .photo-set {
+        padding: 4em 5em;
+    }
+
+    footer {
+        padding: 3em 1em;
+    }
+
+    .charge-end-text {
+        display: block;
+    }
+
+    .brand {
+        font-size: 64px;
+    }
+
+    .button-footer {
+        .butt-footer {
+            margin-left: 26em;
         }
     }
-    .Isadore-Sharpe{
-        font-size: 22px;
-    }
-   .two-colors,
-   .story-title,
-   .title-collection,
-   .right-from-charge,
-   .tittle-tour,
-   .tittle-photo,
-   .tittle-awards,
-   .footer-tittle,
-   .button-footer{
-    font-size: 26px;
-   }
-   .footer-tittle{
-    li{
-        font-size: 22px;
-    }
-   }
-   .list{
-    li{
-        font-size: 22px;
-    }
-   }
-   .photo-set{
-    padding: 3em 0;
-   }
-   .awards-grid{
-    padding:3em 0 ;
-   }
-   .button-footer{
-    button{
-        font-size: 22px;
-    }
-   }
 
-.button-footer{
-    .butt-footer{
-    margin-left: 20em;
+
 }
+
+@media(max-width:977px) {
+    .header-link-group {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .brand {
+        font-size: 40px;
+    }
+
+    .banner-text,
+    .our-story,
+    .cities,
+    .vintage-tour {
+        padding: 2em;
+    }
+
+    footer {
+        .footer-contact {
+
+            .LONDON-OFFICE,
+            .DUBAI-OFFICE,
+            .PARIS-OFFICE,
+            .NEWYORK-OFFICE,
+            .list {
+                h3 {
+                    font-size: 22px;
+                }
+            }
+
+        }
+    }
+
+    .Isadore-Sharpe {
+        font-size: 22px;
+    }
+
+    .two-colors,
+    .story-title,
+    .title-collection,
+    .right-from-charge,
+    .tittle-tour,
+    .tittle-photo,
+    .tittle-awards,
+    .footer-tittle,
+    .button-footer {
+        font-size: 26px;
+    }
+
+    .footer-tittle {
+        li {
+            font-size: 22px;
+        }
+    }
+
+    .list {
+        li {
+            font-size: 22px;
+        }
+    }
+
+    .photo-set {
+        padding: 3em 0;
+    }
+
+    .awards-grid {
+        padding: 3em 2em;
+    }
+
+    .button-footer {
+        button {
+            font-size: 22px;
+            margin-left: 24em;
+        }
+    }
+
+    .button-footer {
+        .butt-footer {
+            margin-left: 20em;
+        }
+    }
 }
-}
-@media(max-width:754px){
+
+@media(max-width:754px) {
+    .left-top {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
     
-    .left-banner{
-        .brand{
+    .center-big {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 7;
+    }
+    
+    .left-bottom{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+    .right-bottom {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    
+    .right-top {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    
+
+    .left-banner {
+        .brand {
             font-size: 28px;
         }
     }
+    .viev-more{
+        h3{
+            padding: 0 45px 0 0;
+        }
+    } 
+    .under-many-photos{
+        padding: 0 40px;
     }
-    .footer-contact{
+    .tittle-awards,
+    .tittle-tour,
+    .title-collection,
+    .story-title,
+    .tittle-photo{
+        text-align: center;
+    }
+
+    .footer-contact {
         display: block;
     }
-    .charge-end-text{
-        img{
+
+    .charge-end-text {
+        img {
             width: 95%;
         }
     }
-    body{
-       .awards-grid{
-        display: inline-block;
-    } 
-    }
-    
-    .button-footer{
-        .butt-footer{
-        margin-left: 0em;
-    }
-    }
 
-@media(max-width:530px){
-    .two-colors,
-   .story-title,
-   .title-collection,
-   .right-from-charge,
-   .tittle-tour,
-   .tittle-photo,
-   .tittle-awards,
-   .footer-tittle,
-   .button-footer{
-    font-size: 18px;
-   }
-   .Isadore-Sharpe{
-    font-size: 12px;
-   }
-   .story-content{
-    display: inline-block;
-   }
-   .under-many-photos{
-    h3{
-        font-size: 16px;
+
+
+    .button-footer {
+        .butt-footer {
+            margin-left: 0em;
+        }
     }
-   }
-   .viev-more{
-    h3{
-        font-size: 16px;
-    }
-   }
-   .right-for-ch-under{
-    span,
-    .under-many-photos{
-        font-size: 16px;
-    }
-   }
 }
 
-  
 
 
-    
+@media(max-width:530px) {
+
+    .two-colors,
+    .story-title,
+    .title-collection,
+    .right-from-charge,
+    .tittle-tour,
+    .tittle-photo,
+    .tittle-awards,
+    .footer-tittle,
+    .button-footer {
+        font-size: 18px;
+    }
+
+    .Isadore-Sharpe {
+        font-size: 12px;
+    }
+
+    .story-content {
+        display: inline-block;
+    }
+
+    .cities {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+
+        .London,
+        .Dubai,
+        .Paries,
+        .NewYork {
+            width: auto;
+
+        }
+    }
+    .awards-grid{
+        display: block;
+    }
+
+    .under-many-photos {
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .viev-more {
+        h3 {
+            font-size: 16px;
+        }
+    }
+
+    .right-for-ch-under {
+
+        span,
+        .under-many-photos {
+            font-size: 16px;
+        }
+    }
+}
