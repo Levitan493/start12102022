@@ -1,0 +1,96 @@
+body{
+    font-family: 'Abhaya Libre', serif;
+}
+*{
+    box-sizing: border-box;
+    h6{
+        color: #F39200;
+    }
+}
+.sec-color{
+    color: #3D3D3C;
+}
+
+.btn::after{
+    content: url(../img/chevron-down.png);
+}
+
+.tulips{
+    background-image: url(../img/background-tulips-and-citrus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.News,
+.Tutorial,
+.poster,
+.newsletter{
+    background-color: #F4ECE8;
+}
+h6{
+    span{
+        color: #3D3D3C;
+    }
+}
+.gray{
+    background-color:#F4ECE8;
+}
+.w-10{
+    width: 9%;
+}
+.w-20{
+    width: 20%;
+}
+.w-70{
+    width: 70%;
+}
+.circle-img{
+    bottom: 6rem;
+}
+.btm{
+    bottom: 4rem;
+}
+
+.bg-sec{
+    background-color:#3D3D3C;
+}
+.z-index-1{
+    z-index: 1;
+}
+.z-index-2{
+    z-index: 2;
+}
+.mx-6{
+    margin-right: 6em!important;
+    margin-left: 6rem!important;
+}
+.gap-6{
+    gap: 4rem!important;
+}
+.fl-height-100{
+    height: 100%!important;
+}
+.sponsor-cubes::before{
+    content: url(../img/chevron-left-sponsor.png);
+    position: absolute;
+    top: 7rem;
+    left: 0rem;
+}
+.sponsor-cubes::after{
+    content: url(../img/chevron-right-sponsor.png);
+    position: absolute;
+    top: 7rem;
+    right: 0rem;
+}
+.bg-blue{
+    background-color: #059EB2;
+}
+.bg-yellow{
+    background-color: #F39200;
+}
+.wh-btn{
+    border: 2px solid white;
+}
+.gr-btn{
+    border: 1px solid #3D3D3C;
+}
+
