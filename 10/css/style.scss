@@ -23,7 +23,8 @@ body{
 .News,
 .Tutorial,
 .poster,
-.newsletter{
+.newsletter,
+footer{
     background-color: #F4ECE8;
 }
 h6{
@@ -92,5 +93,15 @@ h6{
 }
 .gr-btn{
     border: 1px solid #3D3D3C;
+}
+.ftr-logo-position{
+    top: 2rem;
+}
+.m-6{
+    margin-left: 6rem!important;
+    margin-right: 6rem!important;
+}
+.bg-under{
+    background-color: #F2F2F2;
 }
 
