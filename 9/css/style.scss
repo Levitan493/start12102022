@@ -2,12 +2,12 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: 'Philosopher', sans-serif;
 
-    a {
-        text-decoration: none;
-    }
+    // a{button-footer
+    //     text-decoration: none;
+    // }
 }
 
 $black: black;
@@ -680,7 +680,7 @@ footer {
 
     button {
         // margin: 1em 0 2.2em 24.6em;
-        margin-left: 63.8vw;
+        margin-left: 65vw;
         font-weight: 700;
         font-size: 40px;
         background-color: #FF9900;
@@ -857,13 +857,13 @@ footer {
     .button-footer {
         button {
             font-size: 22px;
-            margin-left: 24em;
+            // margin-left: 24em;
         }
     }
 
     .button-footer {
         .butt-footer {
-            margin-left: 20em;
+            margin-left: 30em;
         }
     }
 }
@@ -1005,4 +1005,5 @@ footer {
             font-size: 16px;
         }
     }
+    
 }
