@@ -27,6 +27,9 @@ body{
 footer{
     background-color: #F4ECE8;
 }
+.fs-6{
+    font-size: 4rem!important;
+}
 h6{
     span{
         color: #3D3D3C;
@@ -103,5 +106,10 @@ h6{
 }
 .bg-under{
     background-color: #F2F2F2;
+}
+@media(max-width:1200px){
+    .fs-6{
+        font-size: 2.5rem!important;
+    }
 }
 
