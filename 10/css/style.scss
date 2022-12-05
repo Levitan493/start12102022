@@ -27,6 +27,11 @@ body{
 footer{
     background-color: #F4ECE8;
 }
+.flowers-and-orange{
+    background-image: url(../img/news-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .fs-6{
     font-size: 4rem!important;
 }
@@ -50,6 +55,7 @@ h6{
 .circle-img{
     bottom: 6rem;
 }
+
 .btm{
     bottom: 4rem;
 }
@@ -111,5 +117,25 @@ h6{
     .fs-6{
         font-size: 2.5rem!important;
     }
+    .autowidth{
+        width: auto!important;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+    }
 }
-
+@media(max-width:960px){
+    .autowidth{
+        width: auto!important;
+    }
+    .auto-m{
+        margin: 0!important;
+    }
+}
+@media(max-width:720px){
+    .center{
+        background-image: url(../img/news-img.png);
+        height: 300px;
+    }
+}
