@@ -1,13 +1,303 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body>
-    
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="d-flex justify-content-center gap-5 mt-4 flex-wrap">
+
+
+      <div class="col-xxl-3 ">
+        <img src="../img/header-logo.png" alt="logo">
+      </div>
+      <div class="d-flex col-xxl-4 col-md-6 justify-content-evenly">
+        <div class="btn-group">
+          <button class="btn sec-color" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true"
+            aria-expanded="false">
+            Home
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+          </ul>
+        </div>
+
+        <div class="btn-group">
+          <button class="btn sec-color" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside"
+            aria-expanded="false">
+            News
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+          </ul>
+        </div>
+
+        <div class="btn-group">
+          <button class="btn sec-color" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+            aria-expanded="false">
+            Articolo-News
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+              <li><a class="dropdown-item" href="#">Menu item</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-group">
+          <button class="btn sec-color" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false"
+            aria-expanded="false">
+            Negozi
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Menu item</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="d-flex col-xxl-3 col-md-2 flex-wrap align-items-baseline">
+        <div class=" me-4">
+          <button type="button" class="bg-white border-0"><img src="../img/Icona-lente.png" alt=""></button>
+        </div>
+        <div class="border-start">
+          <img class="px-5" src="../img/portrait-pretty-smiling-girl.png" alt="">
+          <button class="btn sec-color" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false"
+            aria-expanded="false">
+            Annachiara
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <section class="wrapper container-fluid">
+    <section class="baner-news container-lg">
+      <div class="d-flex">
+        <div class="pt-3 pb-2 pe-5">
+          <p class="dr-after position-relative">Home</p>
+        </div>
+        <div class="pt-3 pb-2 text-center">
+          <p>News</p>
+        </div>
+      </div>
+      <div class="bg-white d-flex flex-column">
+        <div class="m-auto mt-5">
+          <h3 class="fs-6 ">News</h3>
+        </div>
+        <div class="m-auto mb-5">
+          <h5>Consigli, tutorial e curiosità sull'universo del Cucito e Filato fai da te</h5>
+        </div>
+
+      </div>
+
+    </section>
+    <section class="News pb-5">
+      <div class="container-xl mx-auto p-0 overflow-hidden">
+        <div class="d-flex justify-content-between container-xl border-bottom border-1 border-dark mb-2">
+          <div class="mt-4">
+            <h3 class="fs-3 fw-bold sec-color">In evidenza</h3>
+          </div>
+          <!-- <div class="mt-4">
+            <h5 class="fw-bold pt-2 sec-color">Vedi tutte</h5>
+          </div> -->
+        </div>
+        <div class="row d-flex">
+          <div class="col-xl-8 col bg-white rounded-1 p-0">
+            <div class="center rounded-1 container-sm">
+              <img class="w-100 p-1 rounded-1" src="../img/news-img.png" alt="">
+
+            </div>
+            <div class="d-flex container-sm flex-column">
+              <div class="m-4">
+                <h6 class="text-center">
+                  Lorem ipsum
+                </h6>
+                <h3 class="text-center pt-4 sec-color">
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit
+                </h3>
+              </div>
+              <div class="mt-5">
+                <h6 class="text-center">
+                  <span>Di</span> Angela Rossi
+                </h6>
+              </div>
+
+              <button class="mt-2 rounded-1 mx-2 bg-white sec-color">Scopri di più</button>
+            </div>
+
+          </div>
+          <div class="col-xl-4">
+            <div class="d-flex bg-white container-sm p-1 gap-2 rounded-1">
+              <div>
+                <img src="../img/img-news-top.png" alt="">
+              </div>
+              <div class="d-flex flex-column">
+                <h6 class="p-2">
+                  Lorem ipsum
+                </h6>
+                <h3 class="fs-4 pb-2 sec-color">
+                  Lorem ipsum dolor sit amet
+                </h3>
+                <h4 class="fs-5 pb-5 sec-color">
+                  Lorem ipsum dolor sit amet...
+                </h4>
+                <h6 class="pb-2">
+                  <span class="sec-color">di</span> Lorem ipsum
+                </h6>
+                <button class="bg-white rounded-1 mx-2 sec-color">Scopri di più</button>
+              </div>
+            </div>
+            <div class="d-flex bg-white container-sm mt-4 p-1 gap-2 rounded-1">
+              <div>
+                <img src="../img/img-news-bottom.png" alt="">
+              </div>
+              <div class="d-flex flex-column">
+                <h6 class="p-2">
+                  Lorem ipsum
+                </h6>
+                <h3 class="fs-4 pb-2 sec-color">
+                  Lorem ipsum dolor sit amet
+                </h3>
+                <h4 class="fs-5 pb-5 sec-color">
+                  Lorem ipsum dolor sit amet...
+                </h4>
+                <h6 class="pb-2">
+                  <span class="sec-color">di</span> Lorem ipsum
+                </h6>
+                <button class="bg-white rounded-1 mx-2 sec-color">Scopri di più</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Cucito-&-Filato">
+      <div class="container-md">
+        <div class="d-flex justify-content-between container-xl border-bottom border-1 border-dark p-0 mb-2">
+          <div class="mt-4">
+            <h3 class="fs-3 fw-bold sec-color">Cucito & Filato</h3>
+          </div>
+          <div class="mt-4">
+            <h5 class="fw-bold pt-2 sec-color">Vedi tutte</h5>
+          </div>
+        </div>
+        <div class="4-products gap-3 row">
+          <div class=" col bg-white rounded-1 p-0">
+            <div class="rounded-1 container-sm">
+              <img class="w-100 pt-1 rounded-1" src="../img/news-cucito-hares.png" alt="">
+
+            </div>
+            <div class="d-flex container-sm flex-column">
+              <div class="m-4">
+                <h5 class="cucito-sec">
+                  1 giugno 2022
+                </h5>
+                <h3 class=" pt-4 sec-color">
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit
+                </h3>
+              </div>
+              <div class="m-4">
+                <h6 class="">
+                  <span>Di</span> Angelica Foschi
+                </h6>
+              </div>
+
+              <button class="mt-2 rounded-1 mx-2 bg-white sec-color">Guarda</button>
+            </div>
+
+          </div>
+          <div class=" col bg-white rounded-1 p-0">
+            <div class="rounded-1 container-sm">
+              <img class="w-100 pt-1 rounded-1" src="../img/news-cucito-hares.png" alt="">
+
+            </div>
+            <div class="d-flex container-sm flex-column">
+              <div class="m-4">
+                <h5 class="cucito-sec">
+                  1 giugno 2022
+                </h5>
+                <h3 class=" pt-4 sec-color">
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit
+                </h3>
+              </div>
+              <div class="m-4">
+                <h6 class="">
+                  <span>Di</span> Angelica Foschi
+                </h6>
+              </div>
+
+              <button class="mt-2 rounded-1 mx-2 bg-white sec-color">Guarda</button>
+            </div>
+
+          </div>
+          <div class=" col bg-white rounded-1 p-0">
+            <div class="rounded-1 container-sm">
+              <img class="w-100 pt-1 rounded-1" src="../img/news-cucito-hares.png" alt="">
+
+            </div>
+            <div class="d-flex container-sm flex-column">
+              <div class="m-4">
+                <h5 class="cucito-sec">
+                  1 giugno 2022
+                </h5>
+                <h3 class=" pt-4 sec-color">
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit
+                </h3>
+              </div>
+              <div class="m-4">
+                <h6 class="">
+                  <span>Di</span> Angelica Foschi
+                </h6>
+              </div>
+
+              <button class="mt-2 rounded-1 mx-2 bg-white sec-color">Guarda</button>
+            </div>
+
+          </div>
+          <div class=" col bg-white rounded-1 p-0">
+            <div class="rounded-1 container-sm">
+              <img class="w-100 pt-1 rounded-1" src="../img/news-cucito-hares.png" alt="">
+
+            </div>
+            <div class="d-flex container-sm flex-column">
+              <div class="m-4">
+                <h5 class="cucito-sec">
+                  1 giugno 2022
+                </h5>
+                <h3 class=" pt-4 sec-color">
+                  Lorem ipsum dolor sit amet, consectetur adipisci elit
+                </h3>
+              </div>
+              <div class="m-4">
+                <h6 class="">
+                  <span>Di</span> Angelica Foschi
+                </h6>
+              </div>
+
+              <button class="mt-2 rounded-1 mx-2 bg-white sec-color">Guarda</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </section>
+
+
+</body>
+
 </html>
