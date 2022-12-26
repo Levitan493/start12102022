@@ -25,18 +25,19 @@
 
 // #3
 
-// let arrRandomNumbers = [2,18,56,456,45,8,65];
-// let midValue = arrRandomNumbers.length;
-// let c = 0
-// function sum(b){
-//     for(i=0; i < midValue; i++){
-//         let a = arrRandomNumbers[i];
-//         c = c+a;     
-//     }
-//     b = c / midValue;
-//     console.log(b);
-// }
-// sum(1);
+
+function sum(b){
+    let arrRandomNumbers = [2,18,56,456,45,8,65];
+    let midValue = arrRandomNumbers.length;
+    let c = 0
+    for(i=0; i < midValue; i++){
+        let a = arrRandomNumbers[i];
+        c = c+a;     
+    }
+    b = c / midValue;
+    console.log(b);
+}
+sum(1);
 
 
 // #4
@@ -106,25 +107,26 @@
 
 // #7
 
-let start = prompt('Enter the starting index');
-let finish = prompt('Enter the ending index');
-let randomArr = [5, 12, "String", null, 546, "Hello!", true, 100];
+// let start = prompt('Enter the starting index');
+// let finish = prompt('Enter the ending index');
+// let randomArr = [5, 12, "String", null, 546, "Hello!", true, 100];
 
-function cutArrFunc(start, finish, randomArr) {
-    if (start < finish) {
-        if (finish < randomArr.length){}
+// function cutArrFunc(start, finish, randomArr) {
+//     if (start < finish) {
+//         if (finish < randomArr.length){}
 
-    }
-    else {
-        alert("Enter correct index")
-    }
-    let newArr = randomArr.slice(start, finish);
-    console.log(randomArr);
-    console.log(newArr);
+//     }
+//     else {
+//         alert("Enter correct index")
+//     }
+//     let newArr = randomArr.slice(start, finish);
+//     console.log(randomArr);
+//     console.log(newArr);
     
-    return newArr;
+//     return newArr;
     
-}
+// }
 
-cutArrFunc(start, finish, randomArr);
+// cutArrFunc(start, finish, randomArr);
+
 
