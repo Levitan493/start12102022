@@ -27,17 +27,18 @@
 
 
 function sum(b){
-    let arrRandomNumbers = [2,18,56,456,45,8,65];
-    let midValue = arrRandomNumbers.length;
+    
+    let midValue = b.length;
     let c = 0
     for(i=0; i < midValue; i++){
-        let a = arrRandomNumbers[i];
+        let a = b[i];
         c = c+a;     
     }
-    b = c / midValue;
-    console.log(b);
+    let res = c / midValue;
+    console.log(res);
 }
-sum(1);
+sum([1,2,3]);
+sum([4,1,3]);
 
 
 // #4

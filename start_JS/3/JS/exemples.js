@@ -17,3 +17,16 @@
 // ююююююююююююююююююююююююююююююююююю
 // Не закінчено!
 
+// let userName = prompt('What is yor name');
+// if(userName ==='Ivan'){
+//     alert('Hello me');
+// }
+// else if(userName === 'Solia'){
+//     alert('Hello ' + userName);
+// }
+// else if(userName === 'Diana'){
+//     alert('Hello ' + userName);
+// }
+// else{
+//     alert('Hello stranger');
+// }
