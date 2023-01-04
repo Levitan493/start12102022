@@ -58,11 +58,10 @@ sellAllUah();
 let direction = prompt('Введіть напрямок (північ, південь, захід, схід)');
 let distance = parseInt(prompt('How many steps'));
 let moving = direction + ' на ' + distance;
-function move(){
-    // console.log('Юзер перемістився на ' + moving + ' кроків');
+function move(){    
     return `Юзер перемістився на ${direction} на ${distance} кроків` 
 }
-move();
+move(moving);
 let userMove = function(fn){
     console.log(fn(move));
 }
