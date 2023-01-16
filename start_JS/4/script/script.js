@@ -57,15 +57,15 @@ sellAllUah();
 
 let direction = prompt('Введіть напрямок (північ, південь, захід, схід)');
 let distance = parseInt(prompt('How many steps'));
-let moving = direction + ' на ' + distance;
-function move(){    
-    return `Юзер перемістився на ${direction} на ${distance} кроків` 
+
+function move(directionAtribute, distanceAtribute){    
+    return `Юзер перемістився на ${directionAtribute} на ${distanceAtribute} кроків` 
 }
-move(moving);
-let userMove = function(fn){
-    console.log(fn(move));
+
+let userMove = function(anotherAttr, anotherDirectionAtribute){
+    console.log(anotherAttr, anotherDirectionAtribute);
 }
-userMove(move);
+userMove(direction, distance, move);
 
 
 // 3) Створіть массив в якому видаляється кожний другий елемент ["Keep", "Remove", "Keep", "Remove", "Keep", ...] в результаті повинен бути ось такий новий массив ["Keep", "Keep", "Keep", ...], Врахувати що массив може бути пустий, повернути помилку в разі пустого масиву

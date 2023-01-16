@@ -15,7 +15,6 @@ let userJedi = new User('Luke', 'Skywalker', 19);
 console.log(userJedi.info())
 let userSith = new User('Dart', 'Vader', 52);
 console.log(userSith.info());
-
 console.log('--<<Next task>>--');
 
 
