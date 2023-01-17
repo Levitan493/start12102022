@@ -38,23 +38,20 @@ date(dateInfo, greeting);
 
 
 
-// 4) Створити функцію яка повертає сторіччя, функція отримує рік а повертає номер сторіччя. Наприклад:
-1810->19
-1700 -> 17
-1601 ->17 
-2000 -> 20
-const result = 0;
+// 4) Створити функцію яка повертає сторіччя, функція отримує рік а повертає номер сторіччя. 
+
+
+// const result = 0;
 const infoYear = parseInt(prompt('Вкажіть рік'));
 function century(years){
-    if(century.arguments[0] % 100 == 0){
-        result = century.arguments[0] / 100;
+    if(arguments[0] % 100 == 0){
+        result = arguments[0] / 100;
     }
     else{
-        result = Math.floor(century.arguments[0] / 100) + 1;
+        result = Math.floor(arguments[0] / 100) + 1;
     }
      console.log(result);
 }
-
 century(infoYear);
 
 
