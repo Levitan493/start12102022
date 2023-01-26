@@ -47,7 +47,7 @@ window.onload = () => {
     console.log(movieArr);
     for(movieReview of movieArr){
         let {Year} = movieReview;
-        console.log(Year);
+        console.log(Year); 
     }
     
 

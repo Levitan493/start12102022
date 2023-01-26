@@ -1,0 +1,19 @@
+div{
+    border: 5px solid blueviolet;
+    text-align: center;
+    margin: 5px;
+    font-size: 40px;
+    background-color: rgb(238, 202, 234);
+}
+/* th, td{
+    padding: 10px 20px;
+    border: 1px solid #000;
+} */
+
+
+/* th{
+    width: 550px;
+} */
+/* td{
+    width: 550px;
+} */
