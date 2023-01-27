@@ -4,41 +4,41 @@ window.onload = () => {
     // Дані виводяться в стилізований список,  можете підключити bootstrap чи написати свої стилі. При введені більше 5 пунктів, перший пункт видаляється. В пункті який добавляється повино бути данні які введено і час створення в форматі день, номер місяця, рік і час години хвилини.
 
 
-    // let formatTime = function () {
+    let formatTime = function () {
 
-    //     let myDate = new Date();
-    //     return (
-    //         "  " +
-    //         myDate.getDate() +
-    //         "." +
-    //         (myDate.getMonth() + 1) +
-    //         "." +
-    //         myDate.getFullYear() +
-    //         "  " +
-    //         myDate.getHours() +
-    //         ":" +
-    //         myDate.getMinutes()
-    //     );
-    // };
-    // let container = document.querySelector('.container');
+        let myDate = new Date();
+        return (
+            "  " +
+            myDate.getDate() +
+            "." +
+            (myDate.getMonth() + 1) +
+            "." +
+            myDate.getFullYear() +
+            "  " +
+            myDate.getHours() +
+            ":" +
+            myDate.getMinutes()
+        );
+    };
+    let container = document.querySelector('.container');
 
-    // function createEl() {
-    //     let todoItem = prompt('Enter your data');
-    //     let item = document.createElement('div');
+    function createEl() {
+        let todoItem = prompt('Enter your data');
+        let item = document.createElement('div');
 
-    //     item.innerText = `${todoItem} and time:${formatTime()}`;
-    //     container.appendChild(item);
-    // }
-    // for (let i = 0; i < 6; i++) {
-    //     createEl();
-    // };
-    // let allItem = document.getElementsByTagName('div');
+        item.innerText = `${todoItem} and time:${formatTime()}`;
+        container.appendChild(item);
+    }
+    for (let i = 0; i < 6; i++) {
+        createEl();
+    };
+    let allItem = document.getElementsByTagName('div');
 
-    // if (allItem.length > 5) {
-    //     container.removeChild(container.firstElementChild);
-    // };
-    // let div = document.querySelector('div');
-    // div.setAttribute('border', 'border-primary');
+    if (allItem.length > 5) {
+        container.removeChild(container.firstElementChild);
+    };
+    let div = document.querySelector('div');
+    div.setAttribute('border', 'border-primary');
 
 
 
@@ -74,7 +74,7 @@ window.onload = () => {
 
 
     let ourTable = document.querySelector('.our_table');
-    createTable(ourTable, 3, 3);
+    createTable(ourTable, 3, 4);
     function createTable(parent, cols, rows) {
         let table = document.createElement('table');
 
@@ -98,15 +98,28 @@ window.onload = () => {
         }
         parent.appendChild(table);
     }
-    let td = document.querySelector('td');
-    td.innerText = 'Name';
+    // let td = document.querySelector('td');
+    // td.innerText = 'Name';
 
-    // let td = document.querySelectorAll('td');
-    // console.log(td);
-    // td.forEach(item => console.log(item));
-    // return`item`;
-    // td.style.width = '550px';
+    let td = document.querySelectorAll('td');
+    console.log(td);
+    td.forEach(index => console.log(index));
+    // return`index`;
+    td[0].innerHTML = 'Name';
+    td[1].innerHTML = "City";
+    td[2].innerHTML = 'Cours';
 
+    td[3].innerHTML = 'Vlad';
+    td[4].innerHTML = 'Kyiv';
+    td[5].innerHTML = 'JS';
+
+    td[6].innerHTML = 'Sofy';
+    td[7].innerHTML = 'Lviv';
+    td[8].innerHTML = 'PHP';
+
+    td[9].innerHTML = 'Ivan';
+    td[10].innerHTML = 'KrakoW';
+    td[11].innerHTML = 'FULLSTACK';
     // class newStudent{
     //     constructor(name, city, cours){
 
