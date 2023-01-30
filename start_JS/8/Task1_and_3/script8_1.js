@@ -120,12 +120,8 @@ window.onload = () => {
     td[9].innerHTML = 'Ivan';
     td[10].innerHTML = 'KrakoW';
     td[11].innerHTML = 'FULLSTACK';
-    // class newStudent{
-    //     constructor(name, city, cours){
-
-    //     }
-    // }
-
+    
+    //Можливо, заповнення можна зробити за допомогою циклу, якщо так, то підкажіть як, будьласка
 
 
 
