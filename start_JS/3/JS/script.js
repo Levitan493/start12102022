@@ -26,12 +26,12 @@
 // #3
 
 
-function sum(b){
+function sum(array){
     
-    let midValue = b.length;
+    let midValue = array.length;
     let c = 0
     for(i=0; i < midValue; i++){
-        let a = b[i];
+        let a = array[i];
         c = c+a;     
     }
     let res = c / midValue;
@@ -86,23 +86,23 @@ sum([4,1,3]);
 
 // #6
 
-// let sumArr =[];
-// let userChoose = prompt('How many numbers')
-// for( let n=0; n<userChoose; n++){
-//     let userNumber = prompt('Enter number');
-//     userNumber = parseFloat(userNumber);
-//     sumArr.push(userNumber);
+let sumArr =[];
+let userChoose = prompt('How many numbers')
+for( let n=0; n<userChoose; n++){
+    let userNumber = prompt('Enter number');
+    userNumber = parseFloat(userNumber);
+    sumArr.push(userNumber);
 
-// }
-// function sum(sumArr){
-//     let variableValue = 0;
-//     for(let i=0; i<sumArr.length; i++){
-//         variableValue += sumArr[i];
-//     }
-//     console.log(variableValue);
-// }
+}
+function sum(sumArr){
+    let variableValue = 0;
+    for(let i=0; i<sumArr.length; i++){
+        variableValue += sumArr[i];
+    }
+    console.log(variableValue);
+}
 
-// sum(sumArr);
+sum(sumArr);
 
 
 

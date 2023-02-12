@@ -105,6 +105,9 @@ window.onload = () => {
     console.log(td);
     td.forEach(index => console.log(index));
     // return`index`;
+
+let studentsObj = [{}]  
+
     td[0].innerHTML = 'Name';
     td[1].innerHTML = "City";
     td[2].innerHTML = 'Cours';
@@ -121,7 +124,7 @@ window.onload = () => {
     td[10].innerHTML = 'KrakoW';
     td[11].innerHTML = 'FULLSTACK';
     
-    //Можливо, заповнення можна зробити за допомогою циклу, якщо так, то підкажіть як, будьласка
+
 
 
 
