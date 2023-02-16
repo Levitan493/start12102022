@@ -251,7 +251,7 @@ window.onload = () => {
   //     if(arrayOfSheep[i]== true){
   //       res += 1;
   //     }
-      
+
   //   }return console.log(res);
   // }
   // countSheeps([true,  true,  true,  false,
@@ -261,12 +261,256 @@ window.onload = () => {
   //   true,  true,  true,  true ,
   //   false, false, true,  true ]);
 
-function minValue(arr){
-  for(let i=0; i<arr.length; i++){
-    console.log(Math.max(arr[i]));
+  // let num = 20;
+  // for(let i=0; i<=20; i++){
+  //   if(i%2 == 0){
+  //     console.log(i)
+  //   }
+  // }
+
+
+  // =====Приклад тернарного оператора=======
+
+  // let a=8;
+  // let b=10;
+  //  let res = b>a ? a+b : Error;
+
+  //  console.log(res);
+
+  // =====Вивести цифри від більшого до меншого=====
+
+
+  // for(let i=15; i<=15; i--){
+  // console.log(i);
+  // if(i==0){
+  //   break;
+  // }
+  // }
+
+  // let a = parseInt(prompt('Enter number', 0));
+  // let b = parseInt(prompt('Enter number', 0));
+  // for (let i = 0; i < a; i++) {
+  //   let starCount = '';
+  //   for (let j = 0; j < b; j++) {
+  //     starCount += '*';
+  //   }
+  //   console.log(starCount);
+  //   console.log();
+  // };
+
+  // let login = prompt('Enter login');
+  // let pass = parseInt(prompt('Enter pass'));
+
+  // if(login == 'admin' && pass == 12345){
+  //   alert ('Вітаємо в системі');
+  // }
+  // else{
+  //   alert('Логін і(або) пароль не вірні')
+  // }
+
+  // let a = parseInt(prompt('Enter 1th value', 0));
+  // let b = parseInt(prompt('Enter 2th value', 0));
+  // let c = parseInt(prompt('Enter 3th value', 0));
+  //  let res = (a+b+c)/3;
+  // document.write(res);
+
+  // let userAge = parseInt(prompt('How old are you?'));
+
+  // res = userAge>18 ? true : false;
+  // console.log(res);
+
+  // let planet = prompt('Введіть назву планети');
+  // switch (planet) {
+  //   case 'Меркурій':
+  //     console.log('Ця планета знаходиться у Сонячній системі');
+  //     break;
+
+  //   case 'Венера':
+  //     console.log('Ця планета знаходиться у Сонячній системі');
+  //     break;
+
+  //   case 'Марс':
+  //     console.log('Ця планета знаходиться у Сонячній системі');
+  //     break;
+
+  //     case 'Юпітер':
+  //       console.log('Ця планета знаходиться у Сонячній системі');
+  //       break;
+  //       default:
+  //         console.log('Нема')
+  // }
+
+
+  // =====Розрахувати знижку і вивести суму зі знижкою====
+
+
+  // let sum = parseInt(prompt('Введіть суму'));
+
+  // if(sum>=100 && sum<=3000){
+  //   let res = (sum/100)*3;
+  //   document.write(sum-res);
+  // }
+  // if(sum>3000 && sum<=10000){
+  //   let res = (sum/100)*5;
+  //   document.write(sum-res);
+  // }
+  // if(sum>10000){
+  //   let res = (sum/100)*7;
+  //   document.write(sum-res);
+  // }
+  // if(sum<100){
+  //   document.write('У вас немає знижки')
+  // };
+
+  // ====Дано число, повернути число + sheep...(1 sheep..., 2 sheep..., 3 sheep...,)=====
+
+  // ==Варіант з масивом==
+  // const countSheep = function (num) {
+  //   let myCount = [];
+  //   for (let i = 0; i < num; i++) {
+  //     myCount.push(i+1+' sheep...');
+  //   }
+  //   console.log(myCount.toString());
+  // }
+  // countSheep(5);
+
+  // ==Варіант зі стрінгом==
+  // const countSheep = function (num){
+  //   let str = "";
+  //   for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+  //   return str;
+  // }
+
+
+  // ====Розвернути кожне слово в стрінгу, пробіли між словами повинні бути збережені====
+
+  // function reverseWords(str) {
+  //   return str.split(" ").map(
+  //   function(a){
+  //     return a.split("").reverse().join("")
+  //   }).join(" ");
+  // }
+
+  // reverseWords('double  spaced  words');
+
+
+  // function descendingOrder(n){
+  //   return parseInt(String(n).split('').sort().reverse().join(''))
+  // }
+  // descendingOrder(42145);
+
+  // ===Тернарний запис замість 3-х if===
+
+  // function updateLight(current) {
+
+  //   return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
+
+  // };
+  // updateLight('green');
+
+  // ===Те саме приклад через стрілкову функцію===
+
+  // const updateLight = current => ({
+  //   green: 'yellow',
+  //   yellow: 'red',
+  //   red: 'green',
+  // })[current]
+
+  // ===Приклад через switch===
+
+  // function updateLight(current) {
+
+  //   switch (current) {
+  //     case 'green':
+  //       return 'yellow';
+  //       break;
+  //     case 'yellow':
+  //       return 'red';
+  //       break;
+  //     case 'red':
+  //       return 'green';
+  //       break;
+  //     default:
+  //       throw 'Error: wrong input';
+  //       break;
+  //   } 
+  // }
+  // ===Повернути кількість дільників даного числа(num)===
+
+  // function countDivisors(num){
+  //   let divisors = 0;
+  //   for(let i=0; i<=num; i++){
+  //     if(num % i == 0){
+  // divisors += 1;
+  //     }
+  //   }
+  //   console.log(divisors);
+  // }
+  // countDivisors(100);
+
+  // ===Вичислити, чи число є квадратним===
+
+  // const isSquare = function(n){
+  //   let res = Math.sqrt(n);
+
+  //   return (res %1 ===0);
+  // }
+  // ----------------------------------------------------------------------------------
+  // ===Приклад циклу do while====
+
+  // let doText = 0;
+  // let counter = 0;
+  // do{
+  //   doText+=counter;
+  //   console.log(doText);
+  //   counter++;
+  // }
+  // while(counter<5);
+  // ---------------------------------------------------------------
+
+  // ======Якзастосовується forEach=======
+
+  // let arr = [1,2,3,4,5,6];
+
+  // arr.forEach((item)=>{document.write(`My number is ${item}, `)});
+  // -----------------------------------------------------------------------------------
+
+  // ====Повертаємо тільки числові значення з масиву====
+  // Метод Number.isInteger перевіряє, чи є передане значення цілим числом=====
+
+  // function filter_list(l) {
+
+  //   return console.log(l.filter(e => Number.isInteger(e)));
+  // }
+  // filter_list([1,2,'aasf','1','123',123])
+  // --------------------------------------------------------------------------------------
+  // =====base і factor=====
+
+  // function checkForFactor (base, factor) {
+  //   if(base % factor == 0){
+  //     return true;
+  //   }
+  //   else{
+  //     return false
+  //   }
+  // }
+  // =====Спрощений код:
+
+  // function checkForFactor (base, factor) {
+  //   return base % factor === 0;
+  // }
+
+
+  function nbYear(p0, percent, aug, p) {
+    let resOfTheYear = p0 * (percent / 100) + aug;
+    console.log(resOfTheYear);
+    let info = resOfTheYear * (percent / 100) + aug;
+    console.log(info);
+    let comparison = parseInt(p / resOfTheYear);
+
+    return console.log(comparison);
+
   }
-  
-}
-minValue([34, -345, -1, 100]);
+  nbYear(1500, 5, 100, 5000)
 
 }
