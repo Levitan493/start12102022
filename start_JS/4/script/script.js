@@ -65,7 +65,7 @@ function move(directionAtribute, distanceAtribute){
 let userMove = function(anotherAttr, anotherDirectionAtribute){
     console.log(anotherAttr, anotherDirectionAtribute);
 }
-userMove(direction, distance, move);
+userMove(direction, distance);
 
 
 // 3) Створіть массив в якому видаляється кожний другий елемент ["Keep", "Remove", "Keep", "Remove", "Keep", ...] в результаті повинен бути ось такий новий массив ["Keep", "Keep", "Keep", ...], Врахувати що массив може бути пустий, повернути помилку в разі пустого масиву
