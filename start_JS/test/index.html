@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,26 @@
     <title>Document</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    
+    <script>
+        window.onload = function () {
+            function createRect(width, height){
+                let svg = document.createElementNS("http://www.w3.org/2000/svg", 'svg');
+                svg.setAttribute('style', 'border: 1px solid black');
+                svg.setAttribute('width',width);
+                svg.setAttribute('height',height);
+                document.body.appendChild(svg);
+            }
+            createRect(200,100);
+        }
+    </script>
+
 </head>
+
 <body>
-    <p class="blue red">Hello</p>
+    <canvas>
+        
+    </canvas>
+
 </body>
+
 </html>

@@ -501,16 +501,34 @@ window.onload = () => {
   // }
 
 
-  function nbYear(p0, percent, aug, p) {
-    let resOfTheYear = p0 * (percent / 100) + aug;
-    console.log(resOfTheYear);
-    let info = resOfTheYear * (percent / 100) + aug;
-    console.log(info);
-    let comparison = parseInt(p / resOfTheYear);
+  // function litres(time) {
+  //   return console.log(Math.floor(time * 0.5));
+  // }
+  // litres(11.8)
+// -------------------------------------------------------------
+// ======Повернути масив з відсортованими числами=====
 
-    return console.log(comparison);
+  // function solution(nums){
+  //   return console.log((nums || []).sort(function(a, b){
+  //     return a - b
+  //   }));
+  // }
+  // solution([20, 2, 10])
 
-  }
-  nbYear(1500, 5, 100, 5000)
+// -----------------------------------------------------------------
+
+  // function strCount(str, letter){  
+  // let res = str.indexOf(strCoun);
+  // console.log(res)               -------Неправильний варіант синтаксису
+
+  // }
+  // strCount('Hello', 'o')
+
+
+  // function strCount(str, letter){  
+  //   return str.split('').filter(c => c == letter).length;--------------Правильний варіант
+  // }
+
+let canvas = document.querySelector('canvas');
 
 }

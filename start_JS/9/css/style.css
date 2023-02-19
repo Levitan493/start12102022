@@ -34,7 +34,7 @@
 
 .container{
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 480px;
     margin: 50px auto;
 }
@@ -45,18 +45,19 @@
 }
 .prev,
 .next{
+    /* width: 70px; */
     position: absolute;
     top: 50%;
     border: 1px solid black;
     background-color: #bebbc1;
     text-align: center;
     padding:10px 15px;
-    border-radius: 10px;
+    border-radius: 17px;
     cursor: pointer;
 }
 .prev{
-    left: 0;
+    left: -48px;
 }
 .next{
-    right: 0;
+    right: -44px;
 }
