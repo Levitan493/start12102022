@@ -529,6 +529,16 @@ window.onload = () => {
   //   return str.split('').filter(c => c == letter).length;--------------Правильний варіант
   // }
 
-let canvas = document.querySelector('canvas');
+  function printUpperCaseIndexes(str) {
+    for (let i = 0; i < str.length; i++) {
+      const char = str[i];
+      if (char === char.toUpperCase()) {
+        console.log(i);
+      }
+    }
+  }
+  
+  const str = "Hello World";
+  printUpperCaseIndexes(str);
 
 }

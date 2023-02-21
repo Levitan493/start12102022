@@ -70,64 +70,32 @@ window.onload = () => {
         }
         parent.appendChild(table);
     }
-    
+
 
     let td = document.querySelectorAll('td');
     console.log(td);
     td.forEach(index => console.log(index));
+
+    function addToList(studentsObj) {
+
+        for (let i = 0; i < studentsObj.length; i++) {
+            td[i].innerHTML = studentsObj[i].name;
+            td[i + 2].innerHTML = studentsObj[i].city;
+            td[i + 6].innerHTML = studentsObj[i].cours;
+        }
+    }
+
     
 
-    let studentsObj = [{
-        name: 'Name',
-        city: 'City',
-        cours: 'Cours'
-    },
-    {
-        name: 'Vlad',
-        city: 'Kyiv',
-        cours: 'JS'
-    },
-    {
-        name: 'Sofy',
-        city: 'Lviv',
-        cours: 'PHP'
-    },
-    {
-        name: 'Ivan',
-        city: 'KrakoW',
-        cours: 'FULLSTACK'
-    }
-    ];
-    function addToList(studentsObj){
-       let count = 0;
-        for(let i=0; i<studentsObj.length; i++){
-            td.innerHTML = studentsObj[i]; 
-          count ++;         
-        } 
-    }
+    let studentsObj = [
+        { name: 'Name', city: 'City', cours: 'Cours' },
+        { name: 'Vlad', city: 'Kyiv', cours: 'JS' },
+        { name: 'Sofy', city: 'Lviv', cours: 'PHP' },
+        { name: 'Ivan', city: 'KrakoW', cours: 'FULLSTACK' }];
+
     addToList(studentsObj);
 
-    // td[0].innerHTML = 'Name';
-    // td[1].innerHTML = "City";
-    // td[2].innerHTML = 'Cours';
-
-    // td[3].innerHTML = 'Vlad';
-    // td[4].innerHTML = 'Kyiv';
-    // td[5].innerHTML = 'JS';
-
-    // td[6].innerHTML = 'Sofy';
-    // td[7].innerHTML = 'Lviv';
-    // td[8].innerHTML = 'PHP';
-
-    // td[9].innerHTML = 'Ivan';
-    // td[10].innerHTML = 'KrakoW';
-    // td[11].innerHTML = 'FULLSTACK';
-
-
-
-
-
-
+   
 
 
 
