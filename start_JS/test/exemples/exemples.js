@@ -77,14 +77,31 @@ window.onload = function () {
     // shortcut('how are you today?')
 // =============================================================================================
 
-function nameShuffler(str){
-    let res = str.split(' ');
-    // console.log(res);
-    let change = res.reverse();
-    console.log(change.join(' '));
+// function nameShuffler(str){
+//     let res = str.split(' ');
+//     // console.log(res);
+//     let change = res.reverse();
+//     console.log(change.join(' '));
   
-}
+// }
 
-nameShuffler('Mary jeggins');
-nameShuffler('john McClane')
+// nameShuffler('Mary jeggins');
+// nameShuffler('john McClane')
+
+// ========================================================================================
+function isValidWalk(walk) {
+    if(walk.length == 10){
+        console.log(true)
+    }
+    else{
+        console.log(false);
+    }
+  }
+
+  isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']);
+  isValidWalk(['n','s','n','s','n','s','n','s','n','s']);
+  
+
+
+
 }

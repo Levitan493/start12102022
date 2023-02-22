@@ -4,6 +4,7 @@
 
 .main-color {
     background-color: rgb(39, 37, 37);
+    text-decoration: #f9f8f8;
 }
 
 .sec-color {
@@ -36,6 +37,10 @@ form {
 .in_border-1 {
     border: solid 1px rgb(100, 5, 100);
     border-radius: 15px;
+    
+}
+.input_error{
+    border: solid 1px red;
 }
 
 input::placeholder {

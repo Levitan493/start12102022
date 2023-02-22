@@ -21,8 +21,10 @@ window.onload = function () {
         }
         let inputsFilled = true;
         inputs.forEach(function(input){
-            if(input.requried && input.value === ''){
-                input.style.borderColor = 'red';
+            if(input.required && input.value === ''){
+                input.classList.remove('in_border-1');
+                input.classList.add('input-error');
+                // input.style.border = '3px solid red';
                 inputsFilled = false;
             }
         });
