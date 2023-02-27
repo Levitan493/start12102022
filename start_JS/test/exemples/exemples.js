@@ -89,18 +89,29 @@ window.onload = function () {
 // nameShuffler('john McClane')
 
 // ========================================================================================
-function isValidWalk(walk) {
-    if(walk.length == 10){
-        console.log(true)
+// function isValidWalk(walk) {
+//     if(walk.length == 10){
+//         console.log(true)
+//     }
+//     else{
+//         console.log(false);
+//     }
+//   }
+
+//   isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']);
+//   isValidWalk(['n','s','n','s','n','s','n','s','n','s']);
+  
+
+function areYouPlayingBanjo(name) {
+    if(/^p/i.test(name)){
+      console.log(name + " plays banjo");
     }
     else{
-        console.log(false);
+        console.log(name + " does not play banjo");
     }
+    
   }
-
-  isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']);
-  isValidWalk(['n','s','n','s','n','s','n','s','n','s']);
-  
+  areYouPlayingBanjo("Adam");
 
 
 

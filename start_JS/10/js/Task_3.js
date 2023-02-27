@@ -3,6 +3,8 @@ let div = document.querySelector('div');
 let right = 0;
 let dovn = 0;
 window.onkeydown = function move(){
-    if(event.keyKode ==)
+    if(event.keyKode == 37){
+        div.style.left -= 10 +'px';
+    }
 }
 }
