@@ -41,7 +41,7 @@ window.onload = () => {
         modal.style.display = 'none';
     };
     window.onclick = function(e){
-        if(e.target == modal || e.target == wrapper){
+        if(e.target == wrapper){
             modal.style.display = 'none';
         }
         
