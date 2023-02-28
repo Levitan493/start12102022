@@ -17,14 +17,14 @@ window.onload = function () {
         if (passInput.value !== confirmPassInput.value) {
             e.preventDefault();
             alert('Паролі не співпадають');
-            return;
+            // return;
         }
         let inputsFilled = true;
         inputs.forEach(function(input){
             if(input.required && input.value === ''){
                 input.classList.remove('in_border-1');
                 input.classList.add('input-error');
-                // input.style.border = '3px solid red';
+                input.style.border = '3px solid red';
                 inputsFilled = false;
             }
         });

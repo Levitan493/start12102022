@@ -5,6 +5,7 @@ window.onload = () => {
     body.appendChild(wrapper);
     wrapper.className = 'wrapper';
 
+
     let btn = document.createElement('button');
     btn.id = 'openModal';
     btn.innerText = 'Open modal';
@@ -21,11 +22,12 @@ window.onload = () => {
     let p = document.createElement('p');
     p.innerText = 'Modal window';
     p.style.textAlign = 'center';
+    p.style.margin = '20px';
 
     modal.appendChild(modalContent);
 
     let btnClose = document.createElement('button');
-    btnClose.style
+    
     btnClose.className= 'close';
     btnClose.innerText = 'close';
     modalContent.appendChild(btnClose);
@@ -39,7 +41,7 @@ window.onload = () => {
         modal.style.display = 'none';
     };
     window.onclick = function(e){
-        if(e.target == modal){
+        if(e.target == modal || e.target == wrapper){
             modal.style.display = 'none';
         }
         
