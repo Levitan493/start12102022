@@ -117,16 +117,28 @@ window.onload = function () {
 // / - кінець регулярного виразу
 // ====================================================================================================  
 
-function areYouPlayingBanjo(name) {
-    if(/^p/i.test(name)){
-      console.log(name + " plays banjo");
-    }
-    else{
-        console.log(name + " does not play banjo");
-    }
+// function areYouPlayingBanjo(name) {
+//     if(/^r/i.test(name)){
+//       console.log(name + " plays banjo");
+//     }
+//     else{
+//         console.log(name + " does not play banjo");
+//     }
     
-  }
-  areYouPlayingBanjo("Adam");
+//   }
+//   areYouPlayingBanjo("Adam");
+
+// ==========================================================================================================
+
+function squareDigits(num){
+  let numStr = num.toString();
+  let numArr = numStr.split('');
+  let squaredArr = numArr.map(num => num*num);
+  let squaredNum = Number(squaredArr.join(''));
+  console.log(squaredNum);
+}
+
+squareDigits(3212)
 
 
 
