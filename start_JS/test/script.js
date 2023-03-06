@@ -505,8 +505,8 @@ window.onload = () => {
   //   return console.log(Math.floor(time * 0.5));
   // }
   // litres(11.8)
-// -------------------------------------------------------------
-// ======Повернути масив з відсортованими числами=====
+  // -------------------------------------------------------------
+  // ======Повернути масив з відсортованими числами=====
 
   // function solution(nums){
   //   return console.log((nums || []).sort(function(a, b){
@@ -515,7 +515,7 @@ window.onload = () => {
   // }
   // solution([20, 2, 10])
 
-// -----------------------------------------------------------------
+  // -----------------------------------------------------------------
 
   // function strCount(str, letter){  
   // let res = str.indexOf(strCoun);
@@ -529,16 +529,51 @@ window.onload = () => {
   //   return str.split('').filter(c => c == letter).length;--------------Правильний варіант
   // }
 
-  function printUpperCaseIndexes(str) {
-    for (let i = 0; i < str.length; i++) {
-      const char = str[i];
-      if (char === char.toUpperCase()) {
-        console.log(i);
-      }
-    }
-  }
+  // function printUpperCaseIndexes(str) {
+  //   for (let i = 0; i < str.length; i++) {
+  //     const char = str[i];
+  //     if (char === char.toUpperCase()) {
+  //       console.log(i);
+  //     }
+  //   }
+  // }
+
+  // const str = "Hello World";
+  // printUpperCaseIndexes(str);
+// ==============================================================================
+  // let number = function(busStops){
+  //   let passengers = 0;
+  //   for(let i=0; i<busStops.length; i++){
+  //     passengers += busStops[i][0];
+  //     passengers -=busStops[i][1];
+  //   }
+  //   return passengers;
+  // }
+  // number([[10, 0], [3, 5], [5, 8]]);
+// ===========================================================================
+  // let uniqueInOrder = function(iterable){
+  //   let letter = iterable.split('');
+  //   console.log(letter);
   
-  const str = "Hello World";
-  printUpperCaseIndexes(str);
+  // }
+  
+  // uniqueInOrder('AAAABBBCCDAABBB');
+
+//   function uniqueInOrder(iterable){
+//   let letters = iterable.split('');
+//   console.log(letters);
+// }
+
+// uniqueInOrder('AAAABBBCCDAABBB'); // ['A', 'A', 'A', 'A', 'B', 'B', 'B', 'C', 'C', 'D', 'A', 'A', 'B', 'B', 'B']
+
+function uniqueInOrder(iterable){
+  let letters = iterable.split('');
+  console.log(letters);
+  return letters;
+}
+
+let result = uniqueInOrder('AAAABBBCCDAABBB');
+console.log(result); // ['A', 'A', 'A', 'A', 'B', 'B', 'B', 'C', 'C', 'D', 'A', 'A', 'B', 'B', 'B']
+
 
 }
