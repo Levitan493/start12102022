@@ -1,0 +1,22 @@
+{
+  "name": "testname",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Levitan493/JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Levitan493/JS/issues"
+  },
+  "homepage": "https://github.com/Levitan493/JS#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
