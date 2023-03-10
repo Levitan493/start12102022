@@ -130,15 +130,17 @@ window.onload = function () {
 
 // ==========================================================================================================
 
-function squareDigits(num){
-  let numStr = num.toString();
-  let numArr = numStr.split('');
-  let squaredArr = numArr.map(num => num*num);
-  let squaredNum = Number(squaredArr.join(''));
-  console.log(squaredNum);
-}
+// function squareDigits(num){
+//   let numStr = num.toString();
+//   let numArr = numStr.split('');
+//   let squaredArr = numArr.map(num => num*num);
+//   let squaredNum = Number(squaredArr.join(''));
+//   console.log(squaredNum);
+// }
 
-squareDigits(3212)
+// squareDigits(3212)
+
+// ===========================================================================
 
 
 

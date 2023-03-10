@@ -15,9 +15,13 @@ function drawCircle(x, y, radius, text){
     ctx.arc(x, y, radius, 0, 2 * Math.PI);
     ctx.stroke();
     ctx.font = ('26px Arial');
-    ctx.strokeText(text, centerX - radius / 2, centerY);
+    // ctx.strokeText(text, centerX - radius / 2, centerY);
+    
+
+    // ctx.strokeText(text, centerX, centerY);
     ctx.textAlign = 'center';
-    ctx.textBaseline = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.strokeText(text, centerX, centerY);
 }
 
 drawCircle(centerX, centerY, 100, 'This circle');
