@@ -195,6 +195,9 @@ right: -12px;
     color: #B5B7C3;
 
 }
+.position{
+    top: 50px;
+}
 
 @media(max-width:1200px) {
     .fs-6 {
@@ -243,10 +246,10 @@ right: -12px;
 }
 
 @media(max-width:576px) {
-    // .center {
-    //     background-image: url(../img/news-img.png);
-    //     height: 300px;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
+    .center {
+        background-image: url(../img/news-img.png);
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

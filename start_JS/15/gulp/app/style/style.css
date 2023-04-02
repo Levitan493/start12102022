@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+.main-color{
+    background-color: crimson;
+}
+.sec-color{
+    background-color: darkslateblue;
+}
